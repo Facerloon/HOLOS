@@ -1,0 +1,538 @@
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+
+    .iHeader {
+        height: 10vh;
+
+        &__imagen {
+            @include Sizes (30px, 30px);
+        }
+
+        &__menu {
+            width: 90%;
+        }
+
+        .lista__item {
+            display: inline-block;
+
+            &__link {
+                
+                font-size: 7px;
+            }
+
+            &--paginaActual {
+                
+                border-bottom: 1px dashed cornsilk;
+            }
+            &--aIns {
+                a {
+                    padding: 0px;
+                    color: black;
+                    background-color: cornsilk;
+                }
+            }
+        }
+    }
+
+    .iFooter {
+    height: 4vh;
+
+    &__parrafo {
+        margin-right: 5px;
+        font-size: 7px;
+        color: rgb(210, 214, 205);
+    }
+
+    &__imagen {
+        margin: 2px;
+        @include Sizes (10px, 10px);
+    }
+}
+
+    .mainIndex {
+        display: block;
+        height: 140vh;
+        
+            &__seccion1 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+                &__titulo {
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+
+                &__parrafo {
+                    font-size: 12px;
+                }
+            }
+
+        &__seccion2 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+            }
+
+        &__seccion3 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+                &__titulo2 {
+                    font-size: 12px;
+                }
+
+                &__parrafo {
+                    font-size: 8px;
+                }
+            }
+
+        &__seccion4 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+            &__titulo2 {
+                font-size: 12px;
+            }
+
+            &__parrafo {
+                font-size: 8px;
+            }
+        }
+
+        &__seccion5 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+        }
+
+        &__seccion6 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+        }
+
+        &__seccion7 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+            &__titulo2 {
+                font-size: 12px;
+            }
+
+            &__parrafo {
+                font-size: 8px;
+            }
+        }
+    }
+
+    .mainPort {
+        height: 90vh;
+        
+
+        &__seccion1 {
+            padding: 10px;
+            margin: 1rem 1rem;
+            display: block;
+
+            &__titulo {
+                font-size: 15px;
+            }
+
+            &__parrafo {
+                font-size: 8px;
+            }
+
+            &__imagen {
+                @include Sizes (100px, 170px);
+                margin: 1rem 1rem;
+            }
+        }
+    }
+
+    .mainContacto {
+        display: block;
+
+        &__carousel {
+            img {
+                height: 400px;
+            }
+        }
+
+        &__infoDeC {
+            margin: 1rem 1rem;
+            padding: 10px;
+
+            &__titulo {
+                font-size: 18px;
+            }
+
+            &__parrafo {
+                font-size: 10px;
+            }
+        }
+
+        &__iFormularios {
+            margin: 1rem 1rem;
+            padding: 10px;
+
+            &__titulo {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .mainReg {
+        width: 60%;
+        margin: 5rem 5rem;
+        padding: 20px;
+        height: 100vh;
+
+        &__form {
+            font-size: 10px;
+        }
+
+        &__pic {
+            img { @include Sizes (60px, 60px);
+            }
+        }
+    }
+
+    .mainCursos {
+        height: 90vh;
+
+        &__lista {
+            display: block;
+
+            &__item__curso {
+                padding: 10px;
+                margin: 1rem 1rem;
+                @include Sizes (20rem, 10rem);
+
+                &:hover {
+                    height: 18rem;
+                    margin-bottom: 3rem;
+                }
+
+                img {
+                    @include Sizes (150px, 100px);
+                }
+
+                &__titulo {
+                    font-size: 15px;
+                }
+
+                &__info {
+                    font-size: 10px;
+                }
+
+                &__button {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .mainCLista {
+        height: 140vh;
+
+        &__lista {
+            display:block;
+
+            &__item {
+                
+                &__curso {
+                    margin: 2rem 2rem;
+
+                    &__titulo{
+                        font-size: 16px;
+                    }
+
+                    &__info2 {
+                        font-size: 10px;
+                    }   
+
+                    &__button {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+
+    .iHeader {
+        height: 10vh;
+
+        &__imagen {
+            @include Sizes (40px, 40px);
+        }
+
+        &__menu {
+            width: 80%;
+        }
+
+        .lista__item {
+            display: inline-block;
+
+            &__link {
+                
+                font-size: 9px;
+            }
+
+            &--paginaActual {
+                
+                border-bottom: 2px dashed cornsilk;
+            }
+            &--aIns {
+                a {
+                    padding: 0px;
+                    color: black;
+                    background-color: cornsilk;
+                }
+            }
+        }
+    }
+
+    .iFooter {
+    height: 4vh;
+
+    &__parrafo {
+        margin-right: 5px;
+        font-size: 7px;
+        color: rgb(210, 214, 205);
+    }
+
+    &__imagen {
+        margin: 2px;
+        @include Sizes (10px, 10px);
+    }
+}
+
+    .mainIndex {
+        display: block;
+        height: 140vh;
+        
+            &__seccion1 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+                &__titulo {
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+
+                &__parrafo {
+                    font-size: 13px;
+                }
+            }
+
+        &__seccion2 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+            }
+
+        &__seccion3 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+                &__titulo2 {
+                    font-size: 14px;
+                }
+
+                &__parrafo {
+                    font-size: 10px;
+                }
+            }
+
+        &__seccion4 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+            &__titulo2 {
+                font-size: 14px;
+            }
+
+            &__parrafo {
+                font-size: 10px;
+            }
+        }
+
+        &__seccion5 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+        }
+
+        &__seccion6 {
+            margin: 1rem 0;
+            height: 15%;
+            width: 100%;
+        }
+
+        &__seccion7 {
+            padding: 10px;
+            margin: 1rem 1rem;
+
+            &__titulo2 {
+                font-size: 14px;
+            }
+
+            &__parrafo {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .mainPort {
+        height: 90vh;
+        
+
+        &__seccion1 {
+            padding: 10px;
+            margin: 1rem 1rem;
+            display: block;
+
+            &__titulo {
+                font-size: 18px;
+            }
+
+            &__parrafo {
+                font-size: 11px;
+            }
+
+            &__imagen {
+                @include Sizes (140px, 200px);
+                margin: 1rem 1rem;
+            }
+        }
+    }
+
+    .mainContacto {
+        display: block;
+
+        &__carousel {
+            img {
+                height: 400px;
+            }
+        }
+
+        &__infoDeC {
+            margin: 1rem 1rem;
+            padding: 10px;
+
+            &__titulo {
+                font-size: 18px;
+            }
+
+            &__parrafo {
+                font-size: 13px;
+            }
+        }
+
+        &__iFormularios {
+            margin: 1rem 1rem;
+            padding: 10px;
+
+            &__titulo {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .mainReg {
+        width: 60%;
+        margin: 5rem 5rem;
+        padding: 20px;
+        height: 100vh;
+
+        &__form {
+            font-size: 10px;
+        }
+
+        &__pic {
+            img { @include Sizes (60px, 60px);
+            }
+        }
+    }
+
+    .mainCursos {
+        height: 110vh;
+        
+
+        &__lista {
+            display: block;
+            
+            &__item {
+                margin: 2rem 2rem;
+                margin-right: 30vw;
+                
+                &__curso {
+                    padding: 10px;
+                    
+                    
+                    @include Sizes (20rem, 10rem);
+
+                    &:hover {
+                        height: 18rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    img {
+                        @include Sizes (150px, 100px);
+                    }
+
+                    &__titulo {
+                        font-size: 15px;
+                    }
+
+                    &__info {
+                        font-size: 10px;
+                    }
+
+                    &__button {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainCLista {
+        height: 140vh;
+
+        &__lista {
+            display:block;
+
+            &__item {
+                
+                &__curso {
+                    margin: 2rem 2rem;
+
+                    &__titulo{
+                        font-size: 16px;
+                    }
+
+                    &__info2 {
+                        font-size: 10px;
+                    }   
+
+                    &__button {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

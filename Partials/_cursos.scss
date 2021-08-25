@@ -1,0 +1,39 @@
+
+.mainCursos {
+    height: 80vh;
+
+    &__lista {
+        @include Flexbox(flex, row, space-evenly, center);
+        list-style: none;
+        margin-top: 7%;
+        font-family: 'Kurale';
+
+        &__item__curso {
+            text-align: center;
+            background-color: cornsilk;
+            padding: 2rem;
+            @include Sizes(30rem, 19.5rem);
+            overflow: hidden;
+            transition: height 1s;
+
+            &:hover {
+                height: 34rem;
+            }
+
+            &__titulo {
+                font-size: 25px;
+            }
+
+            &__button {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                background-color: wheat;
+                padding: 10px;
+
+                &:hover {
+                    color: rgb(255, 196, 0);
+                }
+            }
+        }
+    }
+}

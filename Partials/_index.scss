@@ -1,0 +1,108 @@
+.mainIndex {
+    display: grid;
+    grid-template-areas:
+    "seccionUno seccionUno seccionUno"
+    "seccionDos seccionDos seccionTres"
+    "seccionCuatro seccionCinco seccionCinco"
+    "seccionSeis seccionSeis seccionSiete";
+
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 50vh 50vh 50vh 50vh;
+    grid-gap: 4rem;
+    margin-bottom: 3rem;
+
+    font-family: 'Kurale';
+
+    &__seccion1 {
+        padding: 40px;
+        grid-area: seccionUno;
+        background-color: cornsilk;
+        background-size: cover;
+        margin: 4rem 3rem;
+
+        &__titulo {
+            font-size: 50px;
+            text-decoration: none;
+        }
+
+        &__parrafo {
+            font-size: 20px;
+        }
+    }
+
+    &__seccion2 {
+        grid-area: seccionDos;
+        background-image: url(Multimedia/home3.jpg);      
+        background-position: center;
+        background-size: cover;
+        margin: 0 4rem;
+    }
+
+    &__seccion3 {
+        grid-area: seccionTres;
+        padding: 20px;
+        background-size: cover;
+        margin: 2rem 3rem;
+        background-color: cornsilk;
+
+        &__titulo2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        &__parrafo {
+            font-size: 14px;
+        }
+    }
+
+    &__seccion4 {
+        grid-area: seccionCuatro;
+        padding: 20px;
+        background-size: cover;
+        margin: 2rem 3rem;
+        background-color: cornsilk;
+
+        &__titulo2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        &__parrafo {
+            font-size: 14px;
+        }
+    }
+
+    &__seccion5 {
+        grid-area: seccionCinco;
+        background-image: url(Multimedia/home4.jpg);      
+        background-position: center;
+        background-size: cover;
+        margin: 0 3rem;
+    }
+
+    &__seccion6 {
+        grid-area: seccionSeis;
+        background-image: url(Multimedia/home6.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 0 3rem;
+    }
+
+    &__seccion7 {
+        grid-area: seccionSiete;
+        padding: 20px;
+        margin: 2rem 3rem;
+        background-color: cornsilk;
+
+        &__titulo2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        &__parrafo {
+            font-size: 14px;
+        }
+    }
+
+    
+}

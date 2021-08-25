@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+@mixin Sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin Flexbox($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Kurale', serif;
+    box-sizing: inherit;
+}
+
+.iHeader {
+    /*background-color: rgb(248, 234, 157);*/
+    background-image: url(Multimedia/header.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    height: 12vh;
+    @include Flexbox(flex, row, space-between, center);
+
+
+    &__imagen {
+        margin-left: 2vw;
+    }
+
+    &__parrafo {
+        margin-right: 30vw;
+        color: cornsilk;
+        font-weight:lighter;
+    }
+
+    &__menu {
+        width: 40%;
+    }
+
+    &__menu__lista {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+
+        .lista__item {
+            display: inline-block;
+            position: relative;  
+
+            &__link {
+                font-family:'Cinzel', serif;
+                font-size: 15px;
+                text-decoration: none;
+                color:cornsilk;
+                font-weight: lighter;
+
+                &:hover {
+                    color: cornflowerblue;
+                }
+            }
+            
+            &--paginaActual {
+                
+                border-bottom: 3px dashed cornsilk;
+            }
+            &--aIns {
+                a {
+                    padding: 10px;
+                    color: black;
+                    background-color: cornsilk;
+                }
+            }
+        }
+    }
+}
+
+body {
+    background-image: url(Multimedia/bodytry.jpg);
+    background-size: cover;
+}
+
+.iFooter {
+    height: 6vh;
+    background-image: url(Multimedia/header.jpg);
+    @include Flexbox(flex, row, center, center);
+
+    &__parrafo {
+        margin-right: 5px;
+        font-size: 15px;
+        color: rgb(210, 214, 205);
+    }
+
+    &__imagen {
+        margin: 2px;
+    }
+}

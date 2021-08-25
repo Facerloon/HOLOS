@@ -1,0 +1,40 @@
+.mainCLista {
+    height: 100vh;
+   
+    &__lista {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Kurale';
+        
+        &__item {
+            text-decoration: none;
+            
+            &__curso {
+                background-color: cornsilk;
+                padding: 2rem;
+
+                &__titulo {
+                    text-decoration: underline;
+                    font-weight: bolder;
+                }
+
+                &__info2 {
+                    font-weight: bold;
+                }
+
+                &__button {
+                    text-decoration: none;
+                    padding: 5px;
+                    background-color: crimson;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}

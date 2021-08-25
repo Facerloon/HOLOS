@@ -1,0 +1,30 @@
+
+.mainReg {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    margin-top: 10vh;
+    margin-left: 30%;
+    padding: 5rem 0;
+    background-color: cornsilk;
+    align-items: center;
+    justify-items: center;
+
+    &__form {
+        &__link {
+            display: block;
+            text-decoration: none;
+            padding: 3px; 
+            background-color: rgb(236, 229, 131);
+        }
+    }
+}
+
+.regHeader {
+    height: 2vh;
+
+    &__img {
+        margin: 1rem 1rem;
+    }
+}

@@ -1,0 +1,904 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kurale', serif;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.iHeader {
+  /*background-color: rgb(248, 234, 157);*/
+  background-image: url(Multimedia/header.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iHeader__imagen {
+  margin-left: 2vw;
+}
+
+.iHeader__parrafo {
+  margin-right: 30vw;
+  color: cornsilk;
+  font-weight: lighter;
+}
+
+.iHeader__menu {
+  width: 40%;
+}
+
+.iHeader__menu__lista {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.iHeader__menu__lista .lista__item {
+  display: inline-block;
+  position: relative;
+}
+
+.iHeader__menu__lista .lista__item__link {
+  font-family: 'Cinzel', serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: cornsilk;
+  font-weight: lighter;
+}
+
+.iHeader__menu__lista .lista__item__link:hover {
+  color: cornflowerblue;
+}
+
+.iHeader__menu__lista .lista__item--paginaActual {
+  border-bottom: 3px dashed cornsilk;
+}
+
+.iHeader__menu__lista .lista__item--aIns a {
+  padding: 10px;
+  color: black;
+  background-color: cornsilk;
+}
+
+body {
+  background-image: url(Multimedia/bodytry.jpg);
+  background-size: cover;
+}
+
+.iFooter {
+  height: 6vh;
+  background-image: url(Multimedia/header.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iFooter__parrafo {
+  margin-right: 5px;
+  font-size: 15px;
+  color: #d2d6cd;
+}
+
+.iFooter__imagen {
+  margin: 2px;
+}
+
+.mainIndex {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "seccionUno seccionUno seccionUno"
+ "seccionDos seccionDos seccionTres"
+ "seccionCuatro seccionCinco seccionCinco"
+ "seccionSeis seccionSeis seccionSiete";
+  -ms-grid-columns: 30% auto 30%;
+      grid-template-columns: 30% auto 30%;
+  -ms-grid-rows: 50vh 50vh 50vh 50vh;
+      grid-template-rows: 50vh 50vh 50vh 50vh;
+  grid-gap: 4rem;
+  margin-bottom: 3rem;
+  font-family: 'Kurale';
+}
+
+.mainIndex__seccion1 {
+  padding: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: seccionUno;
+  background-color: cornsilk;
+  background-size: cover;
+  margin: 4rem 3rem;
+}
+
+.mainIndex__seccion1__titulo {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.mainIndex__seccion1__parrafo {
+  font-size: 20px;
+}
+
+.mainIndex__seccion2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: seccionDos;
+  background-image: url(Multimedia/home3.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 4rem;
+}
+
+.mainIndex__seccion3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: seccionTres;
+  padding: 20px;
+  background-size: cover;
+  margin: 2rem 3rem;
+  background-color: cornsilk;
+}
+
+.mainIndex__seccion3__titulo2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.mainIndex__seccion3__parrafo {
+  font-size: 14px;
+}
+
+.mainIndex__seccion4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: seccionCuatro;
+  padding: 20px;
+  background-size: cover;
+  margin: 2rem 3rem;
+  background-color: cornsilk;
+}
+
+.mainIndex__seccion4__titulo2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.mainIndex__seccion4__parrafo {
+  font-size: 14px;
+}
+
+.mainIndex__seccion5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: seccionCinco;
+  background-image: url(Multimedia/home4.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 3rem;
+}
+
+.mainIndex__seccion6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: seccionSeis;
+  background-image: url(Multimedia/home6.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 3rem;
+}
+
+.mainIndex__seccion7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: seccionSiete;
+  padding: 20px;
+  margin: 2rem 3rem;
+  background-color: cornsilk;
+}
+
+.mainIndex__seccion7__titulo2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.mainIndex__seccion7__parrafo {
+  font-size: 14px;
+}
+
+.mainPort {
+  height: 80vh;
+}
+
+.mainPort__seccion1 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img titulo"
+ "img parrafo";
+  -ms-grid-columns: 30vw 43vw;
+      grid-template-columns: 30vw 43vw;
+  -ms-grid-rows: 5vh 66vh;
+      grid-template-rows: 5vh 66vh;
+  text-align: center;
+  margin: 2rem 7rem;
+  padding: 20px;
+  background-color: cornsilk;
+}
+
+.mainPort__seccion1__imagen {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  margin-left: 3.5vw;
+  margin-top: 4vh;
+}
+
+.mainPort__seccion1__titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo;
+  margin-top: 4vh;
+  font-family: 'Kurale';
+}
+
+.mainPort__seccion1__parrafo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: parrafo;
+  margin-top: 5vh;
+  font-size: 16px;
+  font-family: 'Kurale';
+}
+
+.mainContacto {
+  margin-top: 0;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "Carsl Carsl" 
+ "Aside Forms"
+ "Aside Forms";
+  -ms-grid-columns: 50vw 49.1vw;
+      grid-template-columns: 50vw 49.1vw;
+  -ms-grid-rows: 50vh 50vh;
+      grid-template-rows: 50vh 50vh;
+  grid-gap: none;
+}
+
+.mainContacto__carousel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Carsl;
+}
+
+.mainContacto__carousel p {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 18px;
+  color: black;
+  background-color: cornsilk;
+  max-width: 17%;
+  margin-left: 29vw;
+}
+
+.mainContacto__infoDeC {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: Aside;
+  margin-left: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 5.5rem;
+  background-color: cornsilk;
+}
+
+.mainContacto__infoDeC__titulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mainContacto__infoDeC__parrafo {
+  font-size: 16px;
+}
+
+.mainContacto__iFormularios {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: Forms;
+  text-align: center;
+  margin-right: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 4rem;
+  background-color: cornsilk;
+}
+
+.mainContacto__iFormularios__titulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mainCursos {
+  height: 80vh;
+}
+
+.mainCursos__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 7%;
+  font-family: 'Kurale';
+}
+
+.mainCursos__lista__item__curso {
+  text-align: center;
+  background-color: cornsilk;
+  padding: 2rem;
+  height: 19.5rem;
+  width: 30rem;
+  overflow: hidden;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+}
+
+.mainCursos__lista__item__curso:hover {
+  height: 34rem;
+}
+
+.mainCursos__lista__item__curso__titulo {
+  font-size: 25px;
+}
+
+.mainCursos__lista__item__curso__button {
+  text-decoration: none;
+  color: black;
+  background-color: wheat;
+  padding: 10px;
+}
+
+.mainCursos__lista__item__curso__button:hover {
+  color: #ffc400;
+}
+
+.mainCLista {
+  height: 100vh;
+}
+
+.mainCLista__lista {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Kurale';
+}
+
+.mainCLista__lista__item {
+  text-decoration: none;
+}
+
+.mainCLista__lista__item__curso {
+  background-color: cornsilk;
+  padding: 2rem;
+}
+
+.mainCLista__lista__item__curso__titulo {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.mainCLista__lista__item__curso__info2 {
+  font-weight: bold;
+}
+
+.mainCLista__lista__item__curso__button {
+  text-decoration: none;
+  padding: 5px;
+  background-color: crimson;
+  color: white;
+}
+
+.mainReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  text-align: center;
+  margin-top: 10vh;
+  margin-left: 30%;
+  padding: 5rem 0;
+  background-color: cornsilk;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.mainReg__form__link {
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+  background-color: #ece583;
+}
+
+.regHeader {
+  height: 2vh;
+}
+
+.regHeader__img {
+  margin: 1rem 1rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .iHeader {
+    height: 10vh;
+  }
+  .iHeader__imagen {
+    height: 30px;
+    width: 30px;
+  }
+  .iHeader__menu {
+    width: 90%;
+  }
+  .iHeader .lista__item {
+    display: inline-block;
+  }
+  .iHeader .lista__item__link {
+    font-size: 7px;
+  }
+  .iHeader .lista__item--paginaActual {
+    border-bottom: 1px dashed cornsilk;
+  }
+  .iHeader .lista__item--aIns a {
+    padding: 0px;
+    color: black;
+    background-color: cornsilk;
+  }
+  .iFooter {
+    height: 4vh;
+  }
+  .iFooter__parrafo {
+    margin-right: 5px;
+    font-size: 7px;
+    color: #d2d6cd;
+  }
+  .iFooter__imagen {
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+  }
+  .mainIndex {
+    display: block;
+    height: 140vh;
+  }
+  .mainIndex__seccion1 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion1__titulo {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .mainIndex__seccion1__parrafo {
+    font-size: 12px;
+  }
+  .mainIndex__seccion2 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion3 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion3__titulo2 {
+    font-size: 12px;
+  }
+  .mainIndex__seccion3__parrafo {
+    font-size: 8px;
+  }
+  .mainIndex__seccion4 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion4__titulo2 {
+    font-size: 12px;
+  }
+  .mainIndex__seccion4__parrafo {
+    font-size: 8px;
+  }
+  .mainIndex__seccion5 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion6 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion7 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion7__titulo2 {
+    font-size: 12px;
+  }
+  .mainIndex__seccion7__parrafo {
+    font-size: 8px;
+  }
+  .mainPort {
+    height: 90vh;
+  }
+  .mainPort__seccion1 {
+    padding: 10px;
+    margin: 1rem 1rem;
+    display: block;
+  }
+  .mainPort__seccion1__titulo {
+    font-size: 15px;
+  }
+  .mainPort__seccion1__parrafo {
+    font-size: 8px;
+  }
+  .mainPort__seccion1__imagen {
+    height: 170px;
+    width: 100px;
+    margin: 1rem 1rem;
+  }
+  .mainContacto {
+    display: block;
+  }
+  .mainContacto__carousel img {
+    height: 400px;
+  }
+  .mainContacto__infoDeC {
+    margin: 1rem 1rem;
+    padding: 10px;
+  }
+  .mainContacto__infoDeC__titulo {
+    font-size: 18px;
+  }
+  .mainContacto__infoDeC__parrafo {
+    font-size: 10px;
+  }
+  .mainContacto__iFormularios {
+    margin: 1rem 1rem;
+    padding: 10px;
+  }
+  .mainContacto__iFormularios__titulo {
+    font-size: 18px;
+  }
+  .mainContacto__iFormularios p {
+    font-size: 10px;
+  }
+  .mainReg {
+    width: 60%;
+    margin: 5rem 5rem;
+    padding: 20px;
+    height: 100vh;
+  }
+  .mainReg__form {
+    font-size: 10px;
+  }
+  .mainReg__pic img {
+    height: 60px;
+    width: 60px;
+  }
+  .mainCursos {
+    height: 90vh;
+  }
+  .mainCursos__lista {
+    display: block;
+  }
+  .mainCursos__lista__item__curso {
+    padding: 10px;
+    margin: 1rem 1rem;
+    height: 10rem;
+    width: 20rem;
+  }
+  .mainCursos__lista__item__curso:hover {
+    height: 18rem;
+    margin-bottom: 3rem;
+  }
+  .mainCursos__lista__item__curso img {
+    height: 100px;
+    width: 150px;
+  }
+  .mainCursos__lista__item__curso__titulo {
+    font-size: 15px;
+  }
+  .mainCursos__lista__item__curso__info {
+    font-size: 10px;
+  }
+  .mainCursos__lista__item__curso__button {
+    font-size: 10px;
+  }
+  .mainCLista {
+    height: 140vh;
+  }
+  .mainCLista__lista {
+    display: block;
+  }
+  .mainCLista__lista__item__curso {
+    margin: 2rem 2rem;
+  }
+  .mainCLista__lista__item__curso__titulo {
+    font-size: 16px;
+  }
+  .mainCLista__lista__item__curso__info2 {
+    font-size: 10px;
+  }
+  .mainCLista__lista__item__curso__button {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+  .iHeader {
+    height: 10vh;
+  }
+  .iHeader__imagen {
+    height: 40px;
+    width: 40px;
+  }
+  .iHeader__menu {
+    width: 80%;
+  }
+  .iHeader .lista__item {
+    display: inline-block;
+  }
+  .iHeader .lista__item__link {
+    font-size: 9px;
+  }
+  .iHeader .lista__item--paginaActual {
+    border-bottom: 2px dashed cornsilk;
+  }
+  .iHeader .lista__item--aIns a {
+    padding: 0px;
+    color: black;
+    background-color: cornsilk;
+  }
+  .iFooter {
+    height: 4vh;
+  }
+  .iFooter__parrafo {
+    margin-right: 5px;
+    font-size: 7px;
+    color: #d2d6cd;
+  }
+  .iFooter__imagen {
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+  }
+  .mainIndex {
+    display: block;
+    height: 140vh;
+  }
+  .mainIndex__seccion1 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion1__titulo {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .mainIndex__seccion1__parrafo {
+    font-size: 13px;
+  }
+  .mainIndex__seccion2 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion3 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion3__titulo2 {
+    font-size: 14px;
+  }
+  .mainIndex__seccion3__parrafo {
+    font-size: 10px;
+  }
+  .mainIndex__seccion4 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion4__titulo2 {
+    font-size: 14px;
+  }
+  .mainIndex__seccion4__parrafo {
+    font-size: 10px;
+  }
+  .mainIndex__seccion5 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion6 {
+    margin: 1rem 0;
+    height: 15%;
+    width: 100%;
+  }
+  .mainIndex__seccion7 {
+    padding: 10px;
+    margin: 1rem 1rem;
+  }
+  .mainIndex__seccion7__titulo2 {
+    font-size: 14px;
+  }
+  .mainIndex__seccion7__parrafo {
+    font-size: 10px;
+  }
+  .mainPort {
+    height: 90vh;
+  }
+  .mainPort__seccion1 {
+    padding: 10px;
+    margin: 1rem 1rem;
+    display: block;
+  }
+  .mainPort__seccion1__titulo {
+    font-size: 18px;
+  }
+  .mainPort__seccion1__parrafo {
+    font-size: 11px;
+  }
+  .mainPort__seccion1__imagen {
+    height: 200px;
+    width: 140px;
+    margin: 1rem 1rem;
+  }
+  .mainContacto {
+    display: block;
+  }
+  .mainContacto__carousel img {
+    height: 400px;
+  }
+  .mainContacto__infoDeC {
+    margin: 1rem 1rem;
+    padding: 10px;
+  }
+  .mainContacto__infoDeC__titulo {
+    font-size: 18px;
+  }
+  .mainContacto__infoDeC__parrafo {
+    font-size: 13px;
+  }
+  .mainContacto__iFormularios {
+    margin: 1rem 1rem;
+    padding: 10px;
+  }
+  .mainContacto__iFormularios__titulo {
+    font-size: 18px;
+  }
+  .mainContacto__iFormularios p {
+    font-size: 10px;
+  }
+  .mainReg {
+    width: 60%;
+    margin: 5rem 5rem;
+    padding: 20px;
+    height: 100vh;
+  }
+  .mainReg__form {
+    font-size: 10px;
+  }
+  .mainReg__pic img {
+    height: 60px;
+    width: 60px;
+  }
+  .mainCursos {
+    height: 110vh;
+  }
+  .mainCursos__lista {
+    display: block;
+  }
+  .mainCursos__lista__item {
+    margin: 2rem 2rem;
+    margin-right: 30vw;
+  }
+  .mainCursos__lista__item__curso {
+    padding: 10px;
+    height: 10rem;
+    width: 20rem;
+  }
+  .mainCursos__lista__item__curso:hover {
+    height: 18rem;
+    margin-bottom: 3rem;
+  }
+  .mainCursos__lista__item__curso img {
+    height: 100px;
+    width: 150px;
+  }
+  .mainCursos__lista__item__curso__titulo {
+    font-size: 15px;
+  }
+  .mainCursos__lista__item__curso__info {
+    font-size: 10px;
+  }
+  .mainCursos__lista__item__curso__button {
+    font-size: 10px;
+  }
+  .mainCLista {
+    height: 140vh;
+  }
+  .mainCLista__lista {
+    display: block;
+  }
+  .mainCLista__lista__item__curso {
+    margin: 2rem 2rem;
+  }
+  .mainCLista__lista__item__curso__titulo {
+    font-size: 16px;
+  }
+  .mainCLista__lista__item__curso__info2 {
+    font-size: 10px;
+  }
+  .mainCLista__lista__item__curso__button {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=mainStyle.css.map */

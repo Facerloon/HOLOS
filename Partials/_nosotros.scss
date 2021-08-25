@@ -1,0 +1,37 @@
+.mainPort {
+    height: 80vh;
+    
+
+    &__seccion1 {
+        display: grid;
+        grid-template-areas:
+        "img titulo"
+        "img parrafo";
+
+        grid-template-columns: 30vw 43vw;
+        grid-template-rows: 5vh 66vh;
+        text-align: center;
+        margin: 2rem 7rem;
+        padding: 20px;
+        background-color: cornsilk;
+
+        &__imagen {
+            grid-area: img;
+            margin-left: 3.5vw;
+            margin-top: 4vh;
+        }
+
+        &__titulo {
+            grid-area: titulo;
+            margin-top: 4vh;
+            font-family: 'Kurale';
+        }
+
+        &__parrafo {
+            grid-area: parrafo;
+            margin-top: 5vh;
+            font-size: 16px;
+            font-family: 'Kurale';
+        }
+    }
+}
