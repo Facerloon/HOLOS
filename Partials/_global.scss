@@ -20,8 +20,11 @@
     box-sizing: inherit;
 }
 
+html {
+    font-size: 10px;
+}
+
 .iHeader {
-    /*background-color: rgb(248, 234, 157);*/
     background-image: url(Multimedia/header.jpg);
     background-size: cover;
     background-position: bottom;
@@ -86,17 +89,34 @@ body {
 }
 
 .iFooter {
-    height: 6vh;
-    background-image: url(Multimedia/header.jpg);
-    @include Flexbox(flex, row, center, center);
+    &__redes {
+        background-image: url(Multimedia/header.jpg);
+        height: 8vh;
+        @include Flexbox(flex, row, center, center);
 
-    &__parrafo {
-        margin-right: 5px;
-        font-size: 15px;
-        color: rgb(210, 214, 205);
+        &__link {
+            text-decoration: none;
+            color: black;
+            margin-right: 8px;
+
+        }
+    }
+    
+    &__text {
+        background-color: black;
+        @include Flexbox(flex, row, center, center);
+        height: 5vh;
+
+        &__parrafos {
+            text-align: center;
+            display: inline;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 8px;
+        }
     }
 
-    &__imagen {
-        margin: 2px;
-    }
+    
+    
 }

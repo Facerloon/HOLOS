@@ -1,5 +1,5 @@
 .mainCLista {
-    height: 100vh;
+    height: 70vh;
    
     &__lista {
         margin-top: 10vh;
@@ -16,22 +16,29 @@
             
             &__curso {
                 background-color: cornsilk;
-                padding: 2rem;
+                padding: 5em;
 
                 &__titulo {
                     text-decoration: underline;
                     font-weight: bolder;
+                    font-size: 2.5em;
+                }
+
+                &__info {
+                    font-size: 1.7em;
                 }
 
                 &__info2 {
                     font-weight: bold;
+                    font-size: 1.7em;
                 }
 
                 &__button {
                     text-decoration: none;
-                    padding: 5px;
+                    padding: 0.5em;
                     background-color: crimson;
                     color: white;
+                    font-size: 1.7em;
                 }
             }
         }

@@ -6,8 +6,8 @@
     text-align: center;
     margin-top: 10vh;
     margin-left: 30%;
-    padding: 5rem 0;
-    background-color: rgb(255, 204, 0);
+    padding: 5em 0;
+    background-color: cornsilk;
     align-items: center;
     justify-items: center;
 
@@ -15,16 +15,17 @@
         &__link {
             display: block;
             text-decoration: none;
-            padding: 3px; 
+            padding: 0.3em; 
             background-color: rgb(236, 229, 131);
         }
     }
 }
 
 .regHeader {
-    height: 2vh;
+    height: 4vh;
 
     &__img {
-        margin: 1rem 1rem;
+        margin: 2em 1em;
+        color: black;
     }
 }

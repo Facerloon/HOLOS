@@ -1,6 +1,6 @@
 
 .mainCursos {
-    height: 80vh;
+    height: 70vh;
 
     &__lista {
         @include Flexbox(flex, row, space-evenly, center);
@@ -12,16 +12,20 @@
             text-align: center;
             background-color: cornsilk;
             padding: 2rem;
-            @include Sizes(30rem, 19.5rem);
+            @include Sizes(40em, 30em);
             overflow: hidden;
             transition: height 1s;
 
             &:hover {
-                height: 34rem;
+                height: 52em;
             }
 
             &__titulo {
-                font-size: 25px;
+                font-size: 2.5em;
+            }
+
+            &__info {
+                font-size: 1.7em;
             }
 
             &__button {
@@ -29,6 +33,7 @@
                 color: rgb(0, 0, 0);
                 background-color: wheat;
                 padding: 10px;
+                font-size: 1.7em;
 
                 &:hover {
                     color: rgb(255, 196, 0);

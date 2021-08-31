@@ -11,8 +11,8 @@
         grid-template-columns: 30vw 43vw;
         grid-template-rows: 5vh 66vh;
         text-align: center;
-        margin: 2rem 7rem;
-        padding: 20px;
+        margin: 2em 7em;
+        padding: 2em;
         background-color: cornsilk;
 
         &__imagen {
@@ -25,12 +25,13 @@
             grid-area: titulo;
             margin-top: 4vh;
             font-family: 'Kurale';
+            font-size: 2.5em;
         }
 
         &__parrafo {
             grid-area: parrafo;
             margin-top: 5vh;
-            font-size: 16px;
+            font-size: 1.6em;
             font-family: 'Kurale';
         }
     }

@@ -8,8 +8,11 @@
           box-sizing: inherit;
 }
 
+html {
+  font-size: 10px;
+}
+
 .iHeader {
-  /*background-color: rgb(248, 234, 157);*/
   background-image: url(Multimedia/header.jpg);
   background-size: cover;
   background-position: bottom;
@@ -84,9 +87,9 @@ body {
   background-size: cover;
 }
 
-.iFooter {
-  height: 6vh;
+.iFooter__redes {
   background-image: url(Multimedia/header.jpg);
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,23 +105,43 @@ body {
           align-items: center;
 }
 
-.iFooter__parrafo {
-  margin-right: 5px;
-  font-size: 15px;
-  color: #d2d6cd;
+.iFooter__redes__link {
+  text-decoration: none;
+  color: black;
+  margin-right: 8px;
 }
 
-.iFooter__imagen {
-  margin: 2px;
+.iFooter__text {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+}
+
+.iFooter__text__parrafos {
+  text-align: center;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px;
 }
 
 .mainIndex {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "seccionUno seccionUno seccionUno"
- "seccionDos seccionDos seccionTres"
- "seccionCuatro seccionCinco seccionCinco"
- "seccionSeis seccionSeis seccionSiete";
+      grid-template-areas: "seccionUno seccionUno seccionUno" "seccionDos seccionDos seccionTres" "seccionCuatro seccionCinco seccionCinco" "seccionSeis seccionSeis seccionSiete";
   -ms-grid-columns: 30% auto 30%;
       grid-template-columns: 30% auto 30%;
   -ms-grid-rows: 50vh 50vh 50vh 50vh;
@@ -140,12 +163,12 @@ body {
 }
 
 .mainIndex__seccion1__titulo {
-  font-size: 50px;
+  font-size: 5em;
   text-decoration: none;
 }
 
 .mainIndex__seccion1__parrafo {
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .mainIndex__seccion2 {
@@ -163,7 +186,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: seccionTres;
-  padding: 20px;
+  padding: 2em;
   background-size: cover;
   margin: 2rem 3rem;
   background-color: cornsilk;
@@ -171,18 +194,18 @@ body {
 
 .mainIndex__seccion3__titulo2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .mainIndex__seccion3__parrafo {
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .mainIndex__seccion4 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: seccionCuatro;
-  padding: 20px;
+  padding: 2em;
   background-size: cover;
   margin: 2rem 3rem;
   background-color: cornsilk;
@@ -190,11 +213,11 @@ body {
 
 .mainIndex__seccion4__titulo2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .mainIndex__seccion4__parrafo {
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .mainIndex__seccion5 {
@@ -223,18 +246,18 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: seccionSiete;
-  padding: 20px;
+  padding: 2em;
   margin: 2rem 3rem;
   background-color: cornsilk;
 }
 
 .mainIndex__seccion7__titulo2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .mainIndex__seccion7__parrafo {
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .mainPort {
@@ -244,15 +267,14 @@ body {
 .mainPort__seccion1 {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "img titulo"
- "img parrafo";
+      grid-template-areas: "img titulo" "img parrafo";
   -ms-grid-columns: 30vw 43vw;
       grid-template-columns: 30vw 43vw;
   -ms-grid-rows: 5vh 66vh;
       grid-template-rows: 5vh 66vh;
   text-align: center;
-  margin: 2rem 7rem;
-  padding: 20px;
+  margin: 2em 7em;
+  padding: 2em;
   background-color: cornsilk;
 }
 
@@ -271,6 +293,7 @@ body {
   grid-area: titulo;
   margin-top: 4vh;
   font-family: 'Kurale';
+  font-size: 2.5em;
 }
 
 .mainPort__seccion1__parrafo {
@@ -278,7 +301,7 @@ body {
   -ms-grid-column: 2;
   grid-area: parrafo;
   margin-top: 5vh;
-  font-size: 16px;
+  font-size: 1.6em;
   font-family: 'Kurale';
 }
 
@@ -286,9 +309,7 @@ body {
   margin-top: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "Carsl Carsl" 
- "Aside Forms"
- "Aside Forms";
+      grid-template-areas: "Carsl Carsl"  "Aside Forms" "Aside Forms";
   -ms-grid-columns: 50vw 49.1vw;
       grid-template-columns: 50vw 49.1vw;
   -ms-grid-rows: 50vh 50vh;
@@ -306,7 +327,7 @@ body {
 .mainContacto__carousel p {
   font-weight: bold;
   font-style: oblique;
-  font-size: 18px;
+  font-size: 1.8em;
   color: black;
   background-color: cornsilk;
   max-width: 17%;
@@ -321,17 +342,17 @@ body {
   margin-left: 20vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  padding: 5.5rem;
+  padding: 5.5em;
   background-color: cornsilk;
 }
 
 .mainContacto__infoDeC__titulo {
-  font-size: 25px;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 .mainContacto__infoDeC__parrafo {
-  font-size: 16px;
+  font-size: 1.6em;
 }
 
 .mainContacto__iFormularios {
@@ -343,17 +364,17 @@ body {
   margin-right: 20vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  padding: 4rem;
+  padding: 4em;
   background-color: cornsilk;
 }
 
 .mainContacto__iFormularios__titulo {
-  font-size: 25px;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 .mainCursos {
-  height: 80vh;
+  height: 70vh;
 }
 
 .mainCursos__lista {
@@ -379,19 +400,23 @@ body {
   text-align: center;
   background-color: cornsilk;
   padding: 2rem;
-  height: 19.5rem;
-  width: 30rem;
+  height: 30em;
+  width: 40em;
   overflow: hidden;
   -webkit-transition: height 1s;
   transition: height 1s;
 }
 
 .mainCursos__lista__item__curso:hover {
-  height: 34rem;
+  height: 52em;
 }
 
 .mainCursos__lista__item__curso__titulo {
-  font-size: 25px;
+  font-size: 2.5em;
+}
+
+.mainCursos__lista__item__curso__info {
+  font-size: 1.7em;
 }
 
 .mainCursos__lista__item__curso__button {
@@ -399,6 +424,7 @@ body {
   color: black;
   background-color: wheat;
   padding: 10px;
+  font-size: 1.7em;
 }
 
 .mainCursos__lista__item__curso__button:hover {
@@ -406,7 +432,7 @@ body {
 }
 
 .mainCLista {
-  height: 100vh;
+  height: 70vh;
 }
 
 .mainCLista__lista {
@@ -435,23 +461,30 @@ body {
 
 .mainCLista__lista__item__curso {
   background-color: cornsilk;
-  padding: 2rem;
+  padding: 5em;
 }
 
 .mainCLista__lista__item__curso__titulo {
   text-decoration: underline;
   font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.mainCLista__lista__item__curso__info {
+  font-size: 1.7em;
 }
 
 .mainCLista__lista__item__curso__info2 {
   font-weight: bold;
+  font-size: 1.7em;
 }
 
 .mainCLista__lista__item__curso__button {
   text-decoration: none;
-  padding: 5px;
+  padding: 0.5em;
   background-color: crimson;
   color: white;
+  font-size: 1.7em;
 }
 
 .mainReg {
@@ -466,7 +499,7 @@ body {
   text-align: center;
   margin-top: 10vh;
   margin-left: 30%;
-  padding: 5rem 0;
+  padding: 5em 0;
   background-color: cornsilk;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -477,16 +510,17 @@ body {
 .mainReg__form__link {
   display: block;
   text-decoration: none;
-  padding: 3px;
+  padding: 0.3em;
   background-color: #ece583;
 }
 
 .regHeader {
-  height: 2vh;
+  height: 4vh;
 }
 
 .regHeader__img {
-  margin: 1rem 1rem;
+  margin: 2em 1em;
+  color: black;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {

@@ -21,12 +21,12 @@
         margin: 4rem 3rem;
 
         &__titulo {
-            font-size: 50px;
+            font-size: 5em;
             text-decoration: none;
         }
 
         &__parrafo {
-            font-size: 20px;
+            font-size: 2em;
         }
     }
 
@@ -40,35 +40,35 @@
 
     &__seccion3 {
         grid-area: seccionTres;
-        padding: 20px;
+        padding: 2em;
         background-size: cover;
         margin: 2rem 3rem;
-        background-color: rgb(255, 204, 0);
+        background-color: cornsilk;
 
         &__titulo2 {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
+            font-size: 2em;
         }
 
         &__parrafo {
-            font-size: 14px;
+            font-size: 1.4em;
         }
     }
 
     &__seccion4 {
         grid-area: seccionCuatro;
-        padding: 20px;
+        padding: 2em;
         background-size: cover;
         margin: 2rem 3rem;
-        background-color: rgb(255, 204, 0);
+        background-color: cornsilk;
 
         &__titulo2 {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
+            font-size: 2em;
         }
 
         &__parrafo {
-            font-size: 14px;
+            font-size: 1.4em;
         }
     }
 
@@ -90,17 +90,17 @@
 
     &__seccion7 {
         grid-area: seccionSiete;
-        padding: 20px;
+        padding: 2em;
         margin: 2rem 3rem;
-        background-color: rgb(255, 204, 0);
+        background-color: cornsilk;
 
         &__titulo2 {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
+            font-size: 2em;
         }
 
         &__parrafo {
-            font-size: 14px;
+            font-size: 1.4em;
         }
     }
 
