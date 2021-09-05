@@ -106,3 +106,18 @@
 
     
 }
+
+#animaciónCenter {
+    animation: zoomIn;
+    animation-duration: 4s;
+}
+
+#animaciónLeft {
+    animation: fadeInLeft;
+    animation-duration: 5s;
+}
+
+#animaciónRight {
+    animation: fadeInRight;
+    animation-duration: 5s;
+}

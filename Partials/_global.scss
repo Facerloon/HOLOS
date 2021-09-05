@@ -96,9 +96,12 @@ body {
 
         &__link {
             text-decoration: none;
-            color: black;
+            color: rgb(0, 0, 0);
             margin-right: 8px;
 
+            i {
+                font-size: 2em;
+            }
         }
     }
     
@@ -112,11 +115,9 @@ body {
             display: inline;
             color: white;
             text-decoration: none;
-            font-size: 12px;
-            margin: 8px;
+            font-size: 1.2em;
+            margin: 0.8em;
         }
-    }
 
-    
-    
+    }   
 }

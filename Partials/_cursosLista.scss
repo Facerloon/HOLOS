@@ -13,10 +13,14 @@
         
         &__item {
             text-decoration: none;
+            width: 20%;
+            
             
             &__curso {
                 background-color: cornsilk;
                 padding: 5em;
+                height: 40em;
+                
 
                 &__titulo {
                     text-decoration: underline;
@@ -33,15 +37,56 @@
                     font-size: 1.7em;
                 }
 
-                &__button {
+                button {
                     text-decoration: none;
-                    padding: 0.5em;
-                    background-color: crimson;
+                    padding: 0.2em;
+                    background-color: rgb(0, 0, 0);
                     color: white;
-                    font-size: 1.7em;
+                    font-size: 2em;
                 }
+
+                button:hover {
+                        background-color: rgb(0, 153, 255);
+                    }
             }
         }
 
+    }
+}
+
+/* -------------- Offcanvas -------------- */
+
+#offcanvasRight {
+    background-color: cornsilk;
+}
+
+.offcanvas-header {
+    h5 {
+        font-size: 3em;
+    }
+}
+
+.offcanvas-body {
+    &__parrafo {
+        font-size: 1.5em;
+    }
+
+    &__req {
+        font-size: 1.5em;
+        font-weight: bolder;
+        display: inline;
+
+        &__text {
+            font-size: 1.5em;
+            display: inline;
+        }
+    }
+
+    &__button {
+        font-size: 1.7em;
+        text-decoration: none;
+        padding: 0.3em;
+        color: white;
+        background-color: rgb(20, 130, 220);
     }
 }

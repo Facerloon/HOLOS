@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
 * {
@@ -111,6 +112,10 @@ body {
   margin-right: 8px;
 }
 
+.iFooter__redes__link i {
+  font-size: 2em;
+}
+
 .iFooter__text {
   background-color: black;
   display: -webkit-box;
@@ -134,8 +139,8 @@ body {
   display: inline;
   color: white;
   text-decoration: none;
-  font-size: 12px;
-  margin: 8px;
+  font-size: 1.2em;
+  margin: 0.8em;
 }
 
 .mainIndex {
@@ -260,6 +265,27 @@ body {
   font-size: 1.4em;
 }
 
+#animaciónCenter {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#animaciónLeft {
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#animaciónRight {
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
 .mainPort {
   height: 80vh;
 }
@@ -309,7 +335,7 @@ body {
   margin-top: 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "Carsl Carsl"  "Aside Forms" "Aside Forms";
+      grid-template-areas: "Map Map"  "Aside Forms" "Aside Forms";
   -ms-grid-columns: 50vw 49.1vw;
       grid-template-columns: 50vw 49.1vw;
   -ms-grid-rows: 50vh 50vh;
@@ -317,21 +343,15 @@ body {
   grid-gap: none;
 }
 
-.mainContacto__carousel {
+.mainContacto__map {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: Carsl;
-}
-
-.mainContacto__carousel p {
-  font-weight: bold;
-  font-style: oblique;
-  font-size: 1.8em;
-  color: black;
-  background-color: cornsilk;
-  max-width: 17%;
-  margin-left: 29vw;
+  grid-area: Map;
+  width: 60%;
+  margin: 5em 20%;
+  padding: 4em 4em;
+  background-color: black;
 }
 
 .mainContacto__infoDeC {
@@ -457,11 +477,13 @@ body {
 
 .mainCLista__lista__item {
   text-decoration: none;
+  width: 20%;
 }
 
 .mainCLista__lista__item__curso {
   background-color: cornsilk;
   padding: 5em;
+  height: 40em;
 }
 
 .mainCLista__lista__item__curso__titulo {
@@ -479,12 +501,48 @@ body {
   font-size: 1.7em;
 }
 
-.mainCLista__lista__item__curso__button {
+.mainCLista__lista__item__curso button {
   text-decoration: none;
-  padding: 0.5em;
-  background-color: crimson;
+  padding: 0.2em;
+  background-color: black;
   color: white;
+  font-size: 2em;
+}
+
+.mainCLista__lista__item__curso button:hover {
+  background-color: #0099ff;
+}
+
+/* -------------- Offcanvas -------------- */
+#offcanvasRight {
+  background-color: cornsilk;
+}
+
+.offcanvas-header h5 {
+  font-size: 3em;
+}
+
+.offcanvas-body__parrafo {
+  font-size: 1.5em;
+}
+
+.offcanvas-body__req {
+  font-size: 1.5em;
+  font-weight: bolder;
+  display: inline;
+}
+
+.offcanvas-body__req__text {
+  font-size: 1.5em;
+  display: inline;
+}
+
+.offcanvas-body__button {
   font-size: 1.7em;
+  text-decoration: none;
+  padding: 0.3em;
+  color: white;
+  background-color: #1482dc;
 }
 
 .mainReg {
@@ -519,8 +577,9 @@ body {
 }
 
 .regHeader__img {
-  margin: 2em 1em;
-  color: black;
+  margin: 1em 0.5em;
+  color: #796a2f;
+  font-size: 4em;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
@@ -934,5 +993,25 @@ body {
   .mainCLista__lista__item__curso__button {
     font-size: 10px;
   }
+}
+
+.main404 {
+  text-align: center;
+  padding: 16em 5em;
+  margin: 8em 8em;
+  margin-top: 15vh;
+}
+
+.main404 i {
+  font-size: 15em;
+  margin-bottom: 5vh;
+}
+
+.main404__titulo {
+  font-size: 8em;
+}
+
+.main404__parrafo {
+  font-size: 2.5em;
 }
 /*# sourceMappingURL=mainStyle.css.map */

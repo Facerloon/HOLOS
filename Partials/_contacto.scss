@@ -2,7 +2,7 @@
     margin-top: 0;
     display: grid;
     grid-template-areas:
-    "Carsl Carsl" 
+    "Map Map" 
     "Aside Forms"
     "Aside Forms";
 
@@ -10,19 +10,12 @@
     grid-template-rows: 50vh 50vh;
     grid-gap: none;
 
-    &__carousel {
-        grid-area: Carsl;
-
-
-        p {
-            font-weight: bold;
-            font-style: oblique;
-            font-size: 1.8em;
-            color: black;
-            background-color: cornsilk;
-            max-width: 17%;
-            margin-left: 29vw;
-        }
+    &__map {
+        grid-area: Map;
+        width: 60%;
+        margin: 5em 20%;
+        padding: 4em 4em;
+        background-color: black;
     }
 
     &__infoDeC {

@@ -1,0 +1,20 @@
+.main404 {
+    text-align: center;
+    
+    padding: 16em 5em;
+    margin: 8em 8em;
+    margin-top: 15vh;
+
+    i {
+        font-size: 15em;
+        margin-bottom: 5vh;
+    }
+
+    &__titulo {
+        font-size: 8em;
+    }
+
+    &__parrafo {
+        font-size: 2.5em;
+    }
+}   
