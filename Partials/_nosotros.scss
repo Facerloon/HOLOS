@@ -1,38 +1,132 @@
 .mainPort {
-    height: 80vh;
-    
+    display: grid;
+    grid-template-areas: 
+    "Portrait Texto1 Texto1"
+    "Texto2 Texto2 Img"
+    "pFoto pFoto Vacio"
+    "Texto3 Texto3 Texto3";
 
-    &__seccion1 {
-        display: grid;
-        grid-template-areas:
-        "img titulo"
-        "img parrafo";
+    grid-template-columns: 33vw 23vw 43vw;
+    grid-template-rows: 90vh 55vh 55vh 60vh;
 
-        grid-template-columns: 30vw 43vw;
-        grid-template-rows: 5vh 66vh;
-        text-align: center;
-        margin: 2em 7em;
-        padding: 2em;
-        background-color: cornsilk;
 
-        &__imagen {
-            grid-area: img;
-            margin-left: 3.5vw;
-            margin-top: 4vh;
+    &__Texto1 {
+        grid-area: Texto1;
+        background-color: black;
+        @include Sizes(55vw, 60vh);
+        margin-top: 18vh;
+        padding-top: 5em;
+
+        &__title {
+            color: cornsilk;
+            font-size: 3em;
+            text-align: center;
         }
 
-        &__titulo {
-            grid-area: titulo;
-            margin-top: 4vh;
-            font-family: 'Kurale';
-            font-size: 2.5em;
+        &__title2 {
+            color: cornsilk;
+            font-size: 1.8em;
+            text-align: center;
         }
-
+        
         &__parrafo {
-            grid-area: parrafo;
-            margin-top: 5vh;
+            color: cornsilk;
             font-size: 1.6em;
-            font-family: 'Kurale';
+            text-align: center;
+            padding: 1.5em 8em;
+            margin-top: 2.5vh;
+        }
+    }
+
+    &__Portrait {
+        grid-area: Portrait;
+        background-color: black;
+        padding: 2em 2em;
+        @include Sizes(25vw, 63vh);
+        border-radius: 3em;
+        margin-left: 10vw;
+        margin-top: 10vh;
+
+        &__img {
+            background-image: url(Multimedia/Portrait.jpeg);
+            background-size: cover;
+            @include Sizes(25vw, 63vh);
+        }
+    }
+    
+    &__Texto2 {
+        grid-area: Texto2;
+        background-color: black;
+        @include Sizes(53vw, 50vh);
+        padding: 2em 2em;
+        margin-left: 10vw;
+
+        &__title2 {
+            color: cornsilk;
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        
+        &__parrafo {
+            color: cornsilk;
+            font-size: 1.6em;
+            text-align: center;
+            padding: 1.5em 8em;
+        }
+    }
+
+    &__Img {
+        grid-area: Img;
+        background-color: black;
+        padding: 2em 2em;
+        @include Sizes(25vw, 63vh);
+        border-radius: 3em;
+        margin-top: 5vh;
+        margin-left: 6vw;
+
+        &__foto {
+            background-color: cornsilk;
+            background-size: cover;
+            @include Sizes(25vw, 63vh);
+        }
+    }
+
+    &__pFoto {
+        grid-area: pFoto;
+        background-color: black;
+        padding: 2em 2em;
+        @include Sizes(53vw, 42vh);
+        border-radius: 3em;
+        margin-left: 10vw;
+        margin-top: 3vh;
+
+        &__img {
+            background-color: cornsilk;
+            background-size: cover;
+            @include Sizes(53vw, 42vh);
+        }
+    }
+
+    &__Texto3 {
+        grid-area: Texto3;
+        background-color: black;
+        @include Sizes(56vw, 50vh);
+        padding: 2em 2em;
+        margin-left: 22vw;
+
+        &__title2 {
+            color: cornsilk;
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        
+        &__parrafo {
+            color: cornsilk;
+            font-size: 1.6em;
+            text-align: center;
+            padding: 1.5em 8em;
         }
     }
 }

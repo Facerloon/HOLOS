@@ -9,25 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Error 404</title>
 </head>
-<header class="iHeader">
-    <a href="index.html"><img class="iHeader__imagen" src="Multimedia/Logo.png" width="90" height="90"></a>
-    <nav class="iHeader__menu">
-        <ul class="iHeader__menu__lista">
-            <li class="lista__item"><a class="lista__item__link" href="index.html">Home</a>
-            </li>
-            <li class="lista__item"><a class="lista__item__link" href="Nosotros.html">Portfolio</a></li>
-            <li class="lista__item"><a class="lista__item__link" href="Contacto.html">Contacto</a></li>
-            <li class="lista__item"><a class="lista__item__link" href="Registro.html">Campus</a></li>
-            <li class="lista__item lista__item--aIns"><a class="lista__item__link" href="Cursos.html">Inscribirme</a>
-            </li>
-        </ul>
-    </nav>
-</header>
 <body>
     <main class="main404">
-        <i class="far fa-frown"></i>
-        <h1 class="main404__titulo">404</h1>
-        <h3 class="main404__parrafo">La página a la que intentas acceder no existe</h3>
+        <header class="iHeader">
+            <a class="iHeader__logo" href="index.html">
+                <p class="iHeader__logo__text">HOLOS</p>
+            </a>
+            <nav class="iHeader__menu">
+                <ul class="iHeader__menu__lista">
+                    <li class="lista__item lista__item--paginaActual"><a class="lista__item__link" href="index.html">Home</a>
+                    </li>
+                    <li class="lista__item"><a class="lista__item__link" href="Nosotros.html">Portfolio</a></li>
+                    <li class="lista__item"><a class="lista__item__link" href="Contacto.html">Contacto</a></li>
+                    <li class="lista__item"><a class="lista__item__link" href="Registro.html">Campus</a></li>
+                    <li class="lista__item lista__item--aIns"><a class="lista__item__link" href="Cursos.html">Inscribirme</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main404__error">
+            <i class="far fa-frown"></i>
+            <h1 class="main404__error__titulo">404</h1>
+            <h3 class="main404__error__parrafo">La página a la que intentas acceder no existe</h3>
+        </section>
     </main>
 </body>
 <footer class="iFooter">

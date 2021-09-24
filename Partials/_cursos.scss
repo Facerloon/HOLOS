@@ -1,6 +1,7 @@
 
 .mainCursos {
-    height: 70vh;
+    height: 100vh;
+    background-image: url(Multimedia/bodynew.jpg);
 
     &__lista {
         @include Flexbox(flex, row, space-evenly, center);
@@ -10,29 +11,36 @@
 
         &__item__curso {
             text-align: center;
-            background-color: cornsilk;
+            background-color: black;
             padding: 2rem;
+            border-radius: 2em;
+            border: .2em solid cornsilk;
             @include Sizes(40em, 30em);
             overflow: hidden;
             transition: height 1s;
 
+
             &:hover {
-                height: 52em;
+                height: 54em;
             }
 
             &__titulo {
                 font-size: 2.5em;
+                color: cornsilk;
             }
 
             &__info {
                 font-size: 1.7em;
+                color: cornsilk;
+                margin-bottom: 1em;
             }
 
             &__button {
                 text-decoration: none;
                 color: rgb(0, 0, 0);
                 background-color: wheat;
-                padding: 1em;
+                padding: .7em;
+                
                 font-size: 1.7em;
 
                 &:hover {

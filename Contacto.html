@@ -12,82 +12,54 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 </head>
-<header class="iHeader">
-    <a href="index.html"><img class="iHeader__imagen" src="Multimedia/Logo.png" width="90" height="90"></a>
-    <nav class="iHeader__menu">
-        <ul class="iHeader__menu__lista">
-            <li class="lista__item"><a class="lista__item__link" href="index.html">Home</a>
-            </li>
-            <li class="lista__item"><a class="lista__item__link" href="Nosotros.html">Portfolio</a></li>
-            <li class="lista__item lista__item--paginaActual"><a class="lista__item__link" href="Contacto.html">Contacto</a></li>
-            <li class="lista__item"><a class="lista__item__link" href="Registro.html">Campus</a></li>
-            <li class="lista__item lista__item--aIns"><a class="lista__item__link" href="Cursos.html">Inscribirme</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+
 <body>
     <main class="mainContacto">
-        <iframe class="mainContacto__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.6371555172386!2d-58.490624684772726!3d-34.51208198048334!
-            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13f1f166397%3A0x8afbe895e347951c!2sDBA%2C%20C%C3%B3rdoba%202455%2C%20B
-            1636%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1630885655033!5m2!1ses!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
-   
-        <aside class="mainContacto__infoDeC">
-            <h2 class="mainContacto__infoDeC__titulo">Información de contacto</h2>
-            <p class="mainContacto__infoDeC__parrafo">Buenos Aires - Córdoba 2455 Pb 4, Olivos. <br/>
-            Neuquén Capital - Juan B. Justo 1851 Espacio “Ser Integral”. <br />
-            Villa La Angostura - Cerro Belvedere 195 1er Piso. <br />
-            Bariloche - Las Violetas 1032.<br />
-            <br/>
-            <br />
-            Mobile: (+54) 11-2400-9084 <br />
-            Email: turnos@agustinsalinas.net<br />
-            Web: www.agustinsalinas.net</p>
-        </aside>    
-
-        <section class="mainContacto__iFormularios">
-            <br/>
-            <h1 class="mainContacto__iFormularios__titulo">Ingrese sus datos</h1>
-            <br/>
-            <form class="mainContacto__iFormularios__Form" action="">
-               
-                <input type="text" name="nombre" placeholder="Nombre">
-                &nbsp;&nbsp;
-                <input type="text" name="apellido" id="" placeholder="Apellido">
-        
+        <header class="iHeader">
+            <a class="iHeader__logo" href="index.html"><p class="iHeader__logo__text">HOLOS</p></a>
+            <nav class="iHeader__menu">
+                <ul class="iHeader__menu__lista">
+                    <li class="lista__item"><a class="lista__item__link" href="index.html">Home</a>
+                    </li>
+                    <li class="lista__item"><a class="lista__item__link" href="Nosotros.html">Portfolio</a></li>
+                    <li class="lista__item lista__item--paginaActual"><a class="lista__item__link" href="Contacto.html">Contacto</a></li>
+                    <li class="lista__item"><a class="lista__item__link" href="Registro.html">Campus</a></li>
+                    <li class="lista__item lista__item--aIns"><a class="lista__item__link" href="Cursos.html">Inscribirme</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="mainContacto__back"></section>
+        <section class="mainContacto__Info1">
+            <div class="mainContacto__Info1__flexDivs1">
+                <h2 class="mainContacto__Info1__flexDivs1__title">Tel. Celular</h2>
+                <br/>
+                <p class="mainContacto__Info1__flexDivs1__parrafo">+54 9 11 6720-1114</p>
+            </div>
+            <div class="mainContacto__Info1__flexDivs2">
+                <h2 class="mainContacto__Info1__flexDivs2__title">Instagram</h2>
                 <br />
+                <p class="mainContacto__Info1__flexDivs2__parrafo">dr.salinas.homeopata</p>
+                
+            </div>
+            <div class="mainContacto__Info1__flexDivs3">
+                <h2 class="mainContacto__Info1__flexDivs3__title">E-mail</h2>
                 <br />
-        
-               
-                <input type="email" name="correo" id="" placeholder="Correo electrónico">
-                &nbsp;&nbsp;
-                <input type="number" name="celular" id="" placeholder="Tel. Celular">
-        
-                <br />
-                <br />
-        
-                <label for="consulta">¿Cuál es su consulta?</label>
-                <br />
-                <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-        
-                <br />
-                <br />
-        
-                <label for="preferencia">Preferencia de contacto</label>
-                <select name="preferencia" id="">
-                    <option value="p_correo">Correo electrónico</option>
-                    <option value="p_teléfono ">Teléfono celular</option>
-                </select>
-        
-                <br />
-                <br />
-
-                <input type="submit" name="enviar" id="">
-                <input type="reset" name="borrar" id="">
-            </form>
+                <p class="mainContacto__Info1__flexDivs3__parrafo">agustin.g.salinas@gmail.com</p>
+            </div>
         </section>
+            <section class="mainContacto__iFormularios">
+                <h2 class="mainContacto__iFormularios__title">¿Tenés alguna consulta?</h2>
+                <p class="mainContacto__iFormularios__parrafo">Contactanos</p>
+                <input class="mainContacto__iFormularios__nombre" type="text" placeholder="Nombre">
+                <input class="mainContacto__iFormularios__numero" type="number" placeholder="Teléfono">
+                <br/>
+                <input class="mainContacto__iFormularios__mail" type="email" placeholder="Email">
+                <br />
+                <textarea class="mainContacto__iFormularios__mensaje" placeholder="Mensaje"></textarea>
+                <br/>
+                <input class="mainContacto__iFormularios__boton" type="button" value="Enviar">
+            </section>
     </main>
 </body>
 <footer class="iFooter">

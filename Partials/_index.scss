@@ -1,110 +1,151 @@
+.welcomeIndex {
+    background-image:url(Multimedia/bodynew.jpg);
+    height: 120vh;
+
+    &__square {
+        width: 40%;
+        height: 50%;
+        margin-left: 55%;
+        margin-top: 12%;
+
+        &__title {
+            font-size: 5em;
+            color: cornsilk;
+            padding: 0.2em;
+        }
+
+        &__text {
+            margin-top: 2em;
+            font-size: 3em;
+            color: cornsilk;
+        }
+    }
+}
+
 .mainIndex {
+    height: 285vh;
     display: grid;
     grid-template-areas:
-    "seccionUno seccionUno seccionUno"
-    "seccionDos seccionDos seccionTres"
-    "seccionCuatro seccionCinco seccionCinco"
-    "seccionSeis seccionSeis seccionSiete";
-
-    grid-template-columns: 30% auto 30%;
-    grid-template-rows: 50vh 50vh 50vh 50vh;
-    grid-gap: 4rem;
-    margin-bottom: 3rem;
-
-    font-family: 'Kurale';
-
-    &__seccion1 {
-        padding: 40px;
-        grid-area: seccionUno;
-        background-color: cornsilk;
-        background-size: cover;
-        margin: 4rem 3rem;
-
-        &__titulo {
-            font-size: 5em;
-            text-decoration: none;
-        }
-
-        &__parrafo {
-            font-size: 2em;
-        }
-    }
-
-    &__seccion2 {
-        grid-area: seccionDos;
-        background-image: url(Multimedia/home3.jpg);      
-        background-position: center;
-        background-size: cover;
-        margin: 0 4rem;
-    }
-
-    &__seccion3 {
-        grid-area: seccionTres;
-        padding: 2em;
-        background-size: cover;
-        margin: 2rem 3rem;
-        background-color: cornsilk;
-
-        &__titulo2 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2em;
-        }
-
-        &__parrafo {
-            font-size: 1.4em;
-        }
-    }
-
-    &__seccion4 {
-        grid-area: seccionCuatro;
-        padding: 2em;
-        background-size: cover;
-        margin: 2rem 3rem;
-        background-color: cornsilk;
-
-        &__titulo2 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2em;
-        }
-
-        &__parrafo {
-            font-size: 1.4em;
-        }
-    }
-
-    &__seccion5 {
-        grid-area: seccionCinco;
-        background-image: url(Multimedia/home4.jpg);      
-        background-position: center;
-        background-size: cover;
-        margin: 0 3rem;
-    }
-
-    &__seccion6 {
-        grid-area: seccionSeis;
-        background-image: url(Multimedia/home6.jpg);
-        background-position: center;
-        background-size: cover;
-        margin: 0 3rem;
-    }
-
-    &__seccion7 {
-        grid-area: seccionSiete;
-        padding: 2em;
-        margin: 2rem 3rem;
-        background-color: cornsilk;
-
-        &__titulo2 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2em;
-        }
-
-        &__parrafo {
-            font-size: 1.4em;
-        }
-    }
+    "corte corte corte corte"
+    "sec1 sec1 sec1 sec1"
+    "corte1 corte1 corte1 corte1"
+    "sec2 sec2 sec2 sec2"
+    "corte2 corte2 corte2 corte2"
+    "sec3 sec3 sec3 sec3";
+    
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 25vh 70vh 25vh 70vh 25vh 70vh;
 
     
+
+    &__corte {
+        grid-area: corte;
+       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
+        border: cornsilk double 0.3em;*/
+        background-image: url(Multimedia/bodynew.jpg);
+        background-position: top;
+        padding: 0.3em;
+        border: cornsilk 0.3em double;
+
+        &__text {
+            margin-top: 9vh;
+            margin-left: 5vw;
+            color:cornsilk;
+            font-size: 6em;
+        }
+    }
+
+    &__sec1 {
+        grid-area: sec1;
+        padding: 2em;
+        background-image: url(Multimedia/home4.jpg);
+        background-size: cover;
+
+        &__text {
+            font-size: 2em;
+            padding: 1em;
+            background-color: black;
+            color: cornsilk;
+            border-radius: .5em;
+            width: 40%;
+            height: 30%;
+            margin-top: 23vh;
+            margin-left: 50vw;
+        }
+    }
+
+    &__corte1 {
+        grid-area: corte1;
+       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
+        border: cornsilk double 0.3em;*/
+        background-image: url(Multimedia/bodynew.jpg);
+        background-position: top;
+        padding: 0.3em;
+        border: cornsilk 0.3em double;
+
+        &__text {
+            margin-top: 9vh;
+            margin-left: 57vw;
+            color:cornsilk;
+            font-size: 6em;
+        }
+    }
+
+    &__sec2 {
+        grid-area: sec2;
+        padding: 2em;
+        background-image: url(Multimedia/corteIndex.jpg);
+        background-size: cover;
+
+        &__text {
+            font-size: 2em;
+            padding: 1em;
+            background-color: black;
+            color: cornsilk;
+            border-radius: .5em;
+            width: 40%;
+            height: 30%;
+            margin-top: 23vh;
+            margin-left: 7vw;
+        }
+    }
+
+    &__corte2 {
+        grid-area: corte2;
+       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
+        border: cornsilk double 0.3em;*/
+        background-image: url(Multimedia/bodynew.jpg);
+        background-position: top;
+        padding: 0.3em;
+        border: cornsilk 0.3em double;
+
+        &__text {
+            margin-top: 9vh;
+            margin-left: 7vw;
+            color:cornsilk;
+            font-size: 6em;
+        }
+    }
+
+    &__sec3 {
+        grid-area: sec3;
+        padding: 2em;
+        background-image: url(Multimedia/home3.jpg);
+        background-size: cover;
+        background-position: left;
+
+        &__text {
+            font-size: 2em;
+            padding: 1em;
+            background-color: black;
+            color: cornsilk;
+            border-radius: .5em;
+            width: 40%;
+            height: 30%;
+            margin-top: 23vh;
+            margin-left: 50vw;
+        }
+    }
 }
 
 #animaciónCenter {

@@ -2,52 +2,151 @@
     margin-top: 0;
     display: grid;
     grid-template-areas:
-    "Map Map" 
-    "Aside Forms"
-    "Aside Forms";
+    "header header"
+    "Info1 Info1"
+    "Forms Forms";
 
     grid-template-columns: 50vw 49.1vw;
-    grid-template-rows: 50vh 50vh;
+    grid-template-rows: 12vh 70vh 70vh;
     grid-gap: none;
+    
+    background-image: url(Multimedia/bodynew.jpg);
 
-    &__map {
-        grid-area: Map;
-        width: 60%;
-        margin: 5em 20%;
-        padding: 4em 4em;
-        background-color: black;
+    .iHeader {
+        grid-area: header;
     }
 
-    &__infoDeC {
-        grid-area: Aside;
-        margin-left: 20vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding: 5.5em;
-        background-color: cornsilk;
+    &__Info1 {
+        grid-area: Info1;
+        background-color: black;
+        @include Flexbox(flex, row, space-evenly, center);
+        margin-top: 16vh;
+        
 
-        &__titulo {
-            font-size: 2.5em;
-            font-weight: bold;
+        &__flexDivs1 {
+            padding: 0em 5em;
+
+            &__title {
+            color: cornsilk;
+            font-size: 2em;
+            text-align: center;
+            }
+
+            &__parrafo {
+            color: cornsilk;
+            font-size: 2.7em;
+            text-align: center;
+            }
         }
 
-        &__parrafo {
-            font-size: 1.6em;
+        &__flexDivs2 {
+            padding: 0em 5em;
+
+            &__title {
+            color: cornsilk;
+            font-size: 2em;
+            text-align: center;
+            }
+
+
+            &__parrafo {
+            color: cornsilk;
+            font-size: 2.7em;
+            text-align: center;
+            }
         }
+
+        &__flexDivs3 {
+            padding: 0em 5em;
+            
+            &__title {
+            color: cornsilk;
+            font-size: 2em;
+            text-align: center;
+            }
+
+            &__parrafo {
+            color: cornsilk;
+            font-size: 2.7em;
+            text-align: center;
+            }
+        }
+
+        
     }
 
     &__iFormularios {
         grid-area: Forms;
         text-align: center;
-        margin-right: 20vw;
-        margin-top: 5vh;
+        background-color:darkslategrey;
+        width: 50%;
         margin-bottom: 5vh;
+        margin-left: 22.5vw;
         padding: 4em;
-        background-color: cornsilk;
+        
 
-        &__titulo {
-            font-size: 2.5em;
-            font-weight: bold;
+        &__title {
+            color: cornsilk;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        &__parrafo {
+            color: cornsilk;
+            font-size: 2.3em;
+            text-align: center;
+        }
+
+        &__nombre {
+            @include Sizes(15em, 3em);
+            font-size: 1.5em;
+            margin: .8em .4em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__numero {
+            @include Sizes(15em, 3em);
+            font-size: 1.5em;
+            margin: .8em .4em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__mail {
+            @include Sizes(31em, 3em);
+            font-size: 1.5em;
+            margin: .8em .4em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__mensaje {
+            min-width: 31em;
+            min-height: 15em;
+            max-width: 31em;
+            max-height: 30em;
+            font-size: 1.5em;
+            margin: .8em .4em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__boton {
+            @include Sizes(10em, 3em);
+            font-size: 1.5em;
+            margin: .8em .4em;
+            color: black;
+            background-color: cornsilk;
+            border: black solid .3em;
         }
     }
 }

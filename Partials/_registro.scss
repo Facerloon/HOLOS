@@ -1,32 +1,80 @@
 
+
+.bodyReg {
+    background-image: url(Multimedia/bodytry.jpg);
+    background-size: cover;
+}
+
 .mainReg {
     display: flex;
     flex-direction: column;
     width: 40%;
+    height: 60vh;
     text-align: center;
     margin-top: 10vh;
     margin-left: 30%;
     padding: 5em 0;
-    background-color: cornsilk;
+    background-color: black;
     align-items: center;
     justify-items: center;
+    background-image: url(Multimedia/header.jpg);
+    background-size: cover;
+    background-position: left;
+    border: cornsilk .5em double;
+    border-radius: 5em;
 
-    &__form {
+    &__mainTitle {
+        text-decoration: none;
+
+        &__text {
+        font-size: 5em;
+        color: cornsilk;
+        text-decoration: none;
+        text-align: center;
+        border-top: cornsilk 0.1em groove;
+        border-bottom: cornsilk 0.1em groove;
+        }
+    }
+
+    &__titulo2 {
+        color: cornsilk;
+        font-size: 3em;
+    }
+
+    &__Form {
+        &__correo {
+            @include Sizes(18em, 1.2em);
+            font-size: 1.5em;
+            margin: .4em .1em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__contraseña {
+            @include Sizes(18em, 1.2em);
+            font-size: 1.5em;
+            margin: .4em .1em;
+            color: white;
+            background-color: black;
+            border: solid .1em white;
+            padding: 1em;
+        }
+
+        &__mSesionLabel {
+            font-size: 1.8em;
+            color: cornsilk;
+        }
+
         &__link {
             display: block;
             text-decoration: none;
+            font-size: 1.8em;
             padding: 0.3em; 
-            background-color: rgb(236, 229, 131);
+            background-color: black;
+            color: cornsilk;
+            border: cornsilk .1em solid;
         }
-    }
-}
-
-.regHeader {
-    height: 4vh;
-
-    &__img {
-        margin: 1em 0.5em;
-        color: rgb(121, 106, 47);
-        font-size: 4em;
     }
 }

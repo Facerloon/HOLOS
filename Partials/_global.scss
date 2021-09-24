@@ -25,17 +25,23 @@ html {
 }
 
 .iHeader {
-    background-image: url(Multimedia/header.jpg);
-    background-size: cover;
-    background-position: bottom;
-
     height: 12vh;
     @include Flexbox(flex, row, space-between, center);
 
+    &__logo {
+        text-decoration: none;
 
-    &__imagen {
-        margin-left: 2vw;
+        &__text {
+            margin-left: 3.5vw;
+            font-size: 3.6em;
+            color: cornsilk;
+            text-decoration: none;
+            text-align: center;
+            border-top: cornsilk 0.1em groove;
+            border-bottom: cornsilk 0.1em groove;
+        }
     }
+    
 
     &__parrafo {
         margin-right: 30vw;
@@ -62,15 +68,19 @@ html {
                 text-decoration: none;
                 color:cornsilk;
                 font-weight: lighter;
+                
+                
 
                 &:hover {
-                    color: cornflowerblue;
+                    border-bottom: cornsilk dashed 0.1em;
+                    animation: fadeIn;
+                    animation-duration: 1s
                 }
             }
             
             &--paginaActual {
-                
-                border-bottom: 3px dashed cornsilk;
+                padding: 0.4em;
+                border: 0.1em double cornsilk;
             }
             &--aIns {
                 a {
@@ -83,15 +93,15 @@ html {
     }
 }
 
-body {
-    background-image: url(Multimedia/bodytry.jpg);
+.backgroundIndex {
+    background-image: url(Multimedia/bodynew.jpg);
     background-size: cover;
 }
 
 .iFooter {
     &__redes {
         background-image: url(Multimedia/header.jpg);
-        height: 8vh;
+        height: 12vh;
         @include Flexbox(flex, row, center, center);
 
         &__link {
@@ -108,7 +118,7 @@ body {
     &__text {
         background-color: black;
         @include Flexbox(flex, row, center, center);
-        height: 5vh;
+        height: 10vh;
 
         &__parrafos {
             text-align: center;

@@ -1,20 +1,38 @@
 .main404 {
-    text-align: center;
+    background-image: url(Multimedia/bodynew.jpg);
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "error error";
+
+    grid-template-columns: auto;
+    grid-template-rows: 12vh 88vh;
+
+    .iHeader {
+        grid-area: header;
+    }
+
+    &__error {
+        grid-area: error;
+        margin-top: 19vh;
+        text-align: center;
+
+        i {
+            font-size: 15em;
+            margin-bottom: 5vh;
+            color: cornsilk;
+        }
+
+        &__titulo {
+            font-size: 8em;
+            color: cornsilk;
+        }
+
+        &__parrafo {
+            font-size: 2.5em;
+            color: cornsilk;
+        }
+    }
+
     
-    padding: 16em 5em;
-    margin: 8em 8em;
-    margin-top: 15vh;
-
-    i {
-        font-size: 15em;
-        margin-bottom: 5vh;
-    }
-
-    &__titulo {
-        font-size: 8em;
-    }
-
-    &__parrafo {
-        font-size: 2.5em;
-    }
 }   
