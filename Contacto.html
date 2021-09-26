@@ -8,11 +8,9 @@
     <meta name="description" content="Información de contacto y ayuda al usuario de la plataforma virtual HOLOS.">
     <title>HOLOS | Contacto</title>
     <link rel="stylesheet" href="mainStyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
-
 <body>
     <main class="mainContacto">
         <header class="iHeader">
@@ -29,20 +27,44 @@
                 </ul>
             </nav>
         </header>
+        <header2 class="headerMobile">
+            <a class="headerMobile__logo" href="index.html">
+                <p class="headerMobile__logo__text">HOLOS</p>
+            </a>
+            <i class="fas fa-bars">
+                <ul class="menuList">
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="index.html">Home</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Nosotros.html">Portfolio</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Registro.html">Campus</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Cursos.html">Inscribirme</a>
+                    </li>
+                </ul>
+            </i>
+        </header2>
         <section class="mainContacto__back"></section>
-        <section class="mainContacto__Info1">
-            <div class="mainContacto__Info1__flexDivs1">
+        <section class="mainContacto__Info1" >
+            <div class="mainContacto__Info1__flexDivs1" id="animaciónCenter">
                 <h2 class="mainContacto__Info1__flexDivs1__title">Tel. Celular</h2>
                 <br/>
                 <p class="mainContacto__Info1__flexDivs1__parrafo">+54 9 11 6720-1114</p>
             </div>
-            <div class="mainContacto__Info1__flexDivs2">
+            <div class="mainContacto__Info1__flexDivs2" id="animaciónCenter">
                 <h2 class="mainContacto__Info1__flexDivs2__title">Instagram</h2>
                 <br />
                 <p class="mainContacto__Info1__flexDivs2__parrafo">dr.salinas.homeopata</p>
                 
             </div>
-            <div class="mainContacto__Info1__flexDivs3">
+            <div class="mainContacto__Info1__flexDivs3" id="animaciónCenter">
                 <h2 class="mainContacto__Info1__flexDivs3__title">E-mail</h2>
                 <br />
                 <p class="mainContacto__Info1__flexDivs3__parrafo">agustin.g.salinas@gmail.com</p>
@@ -51,27 +73,57 @@
             <section class="mainContacto__iFormularios">
                 <h2 class="mainContacto__iFormularios__title">¿Tenés alguna consulta?</h2>
                 <p class="mainContacto__iFormularios__parrafo">Contactanos</p>
-                <input class="mainContacto__iFormularios__nombre" type="text" placeholder="Nombre">
-                <input class="mainContacto__iFormularios__numero" type="number" placeholder="Teléfono">
+                <input id="animaciónCenter" class="mainContacto__iFormularios__nombre" type="text" placeholder="Nombre">
+                <input id="animaciónCenter" class="mainContacto__iFormularios__numero" type="number" placeholder="Teléfono">
                 <br/>
-                <input class="mainContacto__iFormularios__mail" type="email" placeholder="Email">
+                <input id="animaciónCenter" class="mainContacto__iFormularios__mail" type="email" placeholder="Email">
                 <br />
-                <textarea class="mainContacto__iFormularios__mensaje" placeholder="Mensaje"></textarea>
+                <textarea id="animaciónCenter" class="mainContacto__iFormularios__mensaje" placeholder="Mensaje"></textarea>
                 <br/>
-                <input class="mainContacto__iFormularios__boton" type="button" value="Enviar">
+                <input id="animaciónCenter" class="mainContacto__iFormularios__boton" type="button" value="Enviar">
             </section>
     </main>
 </body>
 <footer class="iFooter">
-    <section class="iFooter__redes">
-        <a class="iFooter__redes__link" href=""><i class="fab fa-instagram-square"></i></a>
-        <a class="iFooter__redes__link" href=""><i class="fab fa-linkedin"></i></i></a>
-        <a class="iFooter__redes__link" href=""><i class="fab fa-whatsapp-square"></i></a>
+    <section class="iFooter__titleYpags">
+        <div class="iFooter__titleYpags__pags">
+            <a class="iFooter__titleYpags__pags__title" href="">HOLOS</a>
+            <ul class="iFooter__titleYpags__pags__list">
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="index.html">Home</a>
+                </li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Nosotros.html">Portfolio</a>
+                </li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Contacto.html">Contacto</a>
+                </li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Registro.html">Campus</a>
+                </li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Cursos.html">Inscribirme</a>
+                </li>
+            </ul>
+            <div class="iFooter__titleYpags__pags__news">
+                <h3 class="iFooter__titleYpags__pags__news__title2">¿Querés recibir noticias? <br /> Suscribite a
+                    nuestro newspaper</h3>
+                <input class="iFooter__titleYpags__pags__news__input" type="email" placeholder="Email">
+                <button class="iFooter__titleYpags__pags__news__button">Subscribirse</button>
+            </div>
+        </div>
     </section>
-    <section class="iFooter__text">
-        <a class="iFooter__text__parrafos" href="">Terminos y condiciones</a>
-        <p class="iFooter__text__parrafos">|</p>
-        <a class="iFooter__text__parrafos" href="">Politica de privacidad</a>
+    <section class="iFooter__privYredes">
+        <div class="iFooter__privYredes__redes">
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-instagram"></i></a>
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-linkedin"></i></i></a>
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="iFooter__privYredes__copy"> Copyright HOLOS © 2021. Todos los derechos reservados.</p>
+        <div class="iFooter__privYredes__terminos">
+            <a class="iFooter__privYredes__terminos__link" href="">Terminos y Condiciones | </a>
+            <a class="iFooter__privYredes__terminos__link" href="">Política de Privacidad</a>
+        </div>
     </section>
 </footer>
 

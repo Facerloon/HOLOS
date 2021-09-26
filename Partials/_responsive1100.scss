@@ -1,0 +1,553 @@
+@media only screen and (min-width: 1100px) and (max-width: 1600px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* ------------- GLOBAL ------------- */
+
+    .iHeader {
+        &__menu__lista {
+            .lista__item {
+                &__link {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .headerMobile {
+        display: none;
+    }
+
+    .iFooter {
+        height: fit-content;
+
+        &__titleYpags {
+            display: block;
+            height: fit-content;
+            padding: 1em .5em;
+
+            &__pags {
+                &__title {
+                    font-size: 3.3em;
+                }
+
+                &__list {
+                    &__item {
+                        display: block;
+                        margin-left: .7em;
+
+                        &__link {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+
+                &__news {
+                    &__title2 {
+                        font-size: 1.4em;
+                    }
+
+                    &__input {
+                        @include Sizes(12em, 1em);
+                    }
+
+                    &__button {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        } 
+
+        &__privYredes {
+            display: block;
+            height: fit-content;
+            padding: 1em .5em;
+            
+
+            &__redes {
+                margin-left: 42%;
+                margin-right: auto;
+
+                &__link {
+                    font-size: 1.6em;
+                }
+            }
+
+            &__copy {
+                font-size: 1.3em;
+            }
+
+            &__terminos {
+                &__link {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    /* ------------ INDEX ------------ */
+
+    .welcomeIndex {
+        
+        &__square {
+
+            &__title {
+                font-size: 3em;
+            }
+
+            &__text {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .mainIndex {
+        display: block;
+
+        &__corte {
+            height: 11.2vh;
+
+            &__text {
+                font-size: 1.4em;
+                margin: 0;
+                margin-top: 5vh;
+                margin-left: 4vw;
+            }
+        }
+
+        &__sec1 {
+            &__text {
+                font-size: 1.2em;
+            }
+        }
+
+        &__corte1 {
+            height: 11.2vh;
+
+            &__text {
+                font-size: 1.4em;
+                margin: 0;
+                margin-top: 5vh;
+                margin-left: 65vw;
+            }
+        }
+
+        &__sec2 {
+            &__text {
+                font-size: 1.2em;
+            }
+        }
+
+        &__corte2 {
+            height: 11.2vh;
+
+            &__text {
+                font-size: 1.4em;
+                margin: 0;
+                margin-top: 5vh;
+                margin-left: 4vw;
+            }
+        }
+
+        &__sec3 {
+            margin-bottom: 0vh;
+
+            &__text {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    /* ------------ PORTFOLIO ------------ */
+
+    .mainPort {
+
+        &__Texto1 {
+            margin-left: 8%;
+            width: 68%;
+            height: fit-content;
+            padding: 0;
+            padding-top: 1em;
+
+            &__title {
+                font-size: 1.4em;
+            }
+
+            &__title2 {
+                font-size: 1.2em;
+            }
+
+            &__parrafo {
+                font-size: 1.1em;
+            }
+        }
+
+        &__Portrait {
+            @include Sizes(68%, 60vh);
+            margin-left: 40%;
+            margin-bottom: 10%;
+
+            &__img {
+                @include Sizes(99%, 60vh);
+                background-position: top;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        &__Texto2 {
+            margin-left: 32%;
+            width: 68%;
+            height: fit-content;
+            padding: 0;
+            padding-top: 1em;
+            
+            &__title2 {
+                font-size: 1.2em;
+            }
+
+            &__parrafo {
+                font-size: 1.1em;
+            }
+        }
+
+        &__Img {
+            @include Sizes(60%, 50vh);
+            margin-left: 0;
+            margin-bottom: 10%;
+
+            &__foto {
+                @include Sizes(99%, 50vh);
+            }
+        }
+
+        &__pFoto {
+            @include Sizes(70%, 40vh);
+            margin-left: 50%;
+            margin-bottom: 10vh;
+            margin-top: 10%;
+
+            &__img {
+                @include Sizes(99%, 38vh);
+            }
+        }
+
+        &__Texto3 {
+            margin-left: 15%;
+            width: 68%;
+            height: fit-content;
+            padding: 0;
+            padding-top: 1em;
+
+            &__title2 {
+                 font-size: 1.2em;
+            }
+            
+            &__parrafo {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    /* ------------ CONTACTO ------------ */
+
+    .mainContacto {
+        height: 170vh;
+
+        &__Info1 {
+            padding: 1em 1em;
+
+            &__flexDivs1 {
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__title {
+                font-size: 1.4em;
+                }
+
+                &__parrafo { 
+                font-size: 1.3em;
+                }
+            }
+
+            &__flexDivs2 {
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__title {
+                font-size: 1.4em;
+                }
+
+
+                &__parrafo {
+                font-size: 1.3em;
+                }
+            }
+
+            &__flexDivs3 {
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__title {
+                font-size: 1.4em;
+                }
+
+                &__parrafo {
+                font-size: 1.3em;
+                }
+            }
+
+            
+        }
+
+        &__iFormularios {
+            width: fit-content;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+            &__title {
+                font-size: 1.4em;
+            }
+
+            &__parrafo {
+                font-size: 1.3em;
+            }
+
+            &__nombre {
+                @include Sizes(12em, 3em);
+                font-size: 1.3em;
+                margin: .8em .4em;
+                padding: 1em;
+            }
+
+            &__numero {
+                @include Sizes(12em, 3em);
+                font-size: 1.3em;
+                margin: .8em .4em;
+                padding: 1em;
+            }
+
+            &__mail {
+                @include Sizes(25em, 3em);
+                font-size: 1.3em;
+                padding: 1em 1em;
+                margin: 1em 0;
+            }
+
+            &__mensaje {
+                min-width: 25em;
+                min-height: 5em;
+                max-width: 30em;
+                max-height: 15em;
+                @include Sizes(25em, 5em);
+                font-size: 1.3em;
+                padding: 1em 1em;
+                margin: 1em 0;
+            }
+
+            &__boton {
+                @include Sizes(15em, 3em);
+                font-size: 1.3em;
+                padding: 0 1em;
+            }
+        }
+    }
+
+    /* ------------ REGISTRO ------------ */
+    
+    .bodyReg {
+        background-image: url(Multimedia/corteIndex.jpg);
+    }
+
+    .mainReg {
+        width: fit-content;
+        height: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1.5em 1.5em;
+
+        &__mainTitle {
+            &__text {
+                font-size: 3.2em;
+            }
+        }
+
+        &__titulo2 {
+            font-size: 2.2em;
+        }
+
+        &__Form {
+            &__correo {
+                @include Sizes(18em, 1.2em);
+                font-size: 1.2em;
+                margin-right: auto;
+                margin-left: auto;
+                color: white;
+                background-color: black;
+                border: solid .1em white;
+                padding: 1em;
+            }
+
+            &__contraseña {
+                @include Sizes(18em, 1.2em);
+                font-size: 1.2em;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &__mSesionLabel {
+                font-size: 1.2em;
+            }
+
+            &__link {
+                font-size: 1.2em;
+            }
+        }
+    }
+    
+    /* ------------ CURSOS ------------ */
+
+    .mainCursos {
+        height: 140vh;
+
+        &__lista {
+
+            &__item__curso {
+                padding: 1em 1em;
+                @include Sizes(40em, 29em);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2em;
+
+                &:hover {
+                height: 70vh;
+                }
+
+                &__titulo {
+                    font-size: 1.4em;
+                }
+
+                &__info {
+                    font-size: 1.2em;
+                }
+
+                &__button {            
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    /* ------------ CURSOS LISTA ------------ */
+
+        .mainCLista {
+            height: 120vh;
+            
+            &__lista {
+                
+                &__item {
+                    width: 40%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom: 6vh;
+                    
+                    &__curso {
+                        padding: 2em;
+                        height: 20em;
+                        
+
+                        &__titulo {
+                            font-size: 1.7em;
+                        }
+
+                        &__info {
+                            font-size: 1.4em;
+                        }
+
+                        &__info2 {
+                            font-size: 1.4em;
+                        }
+
+                        &__button {
+                            font-size: 1.4em;
+                        }
+
+                        &__button:hover {
+                            color: rgb(0, 153, 255);
+                        }
+                    }
+                }
+
+            }
+        }
+    
+    /* ------------ CAMPUS ------------ */
+
+    .mainCampus {
+
+        &__sideHeader {
+        
+            &__title {
+            width: 80%;
+            
+            
+                &__text {
+                    font-size: 2.7em;
+                }
+            }
+        }
+
+        &__nav {
+
+            &__lista {
+                
+                &__item {
+                    font-size: 1.3em;
+
+                    &__link {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        &__navBar {
+
+            &__text {
+                font-size: 3em;
+            }
+            
+            &__nav {
+
+                &__lista {
+
+                    &__item {
+
+                        &__link {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+    }
+
+
+
+        &__navMobile {
+            display: none;
+        }
+
+        &__mainContent {
+            height: 100vh;
+        }
+    }
+
+    
+}

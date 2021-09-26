@@ -23,7 +23,7 @@
 }
 
 .mainIndex {
-    height: 285vh;
+
     display: grid;
     grid-template-areas:
     "corte corte corte corte"
@@ -40,8 +40,6 @@
 
     &__corte {
         grid-area: corte;
-       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
         background-image: url(Multimedia/bodynew.jpg);
         background-position: top;
         padding: 0.3em;
@@ -76,8 +74,6 @@
 
     &__corte1 {
         grid-area: corte1;
-       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
         background-image: url(Multimedia/bodynew.jpg);
         background-position: top;
         padding: 0.3em;
@@ -112,8 +108,6 @@
 
     &__corte2 {
         grid-area: corte2;
-       /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
         background-image: url(Multimedia/bodynew.jpg);
         background-position: top;
         padding: 0.3em;
@@ -148,17 +142,3 @@
     }
 }
 
-#animaciónCenter {
-    animation: zoomIn;
-    animation-duration: 4s;
-}
-
-#animaciónLeft {
-    animation: fadeInLeft;
-    animation-duration: 5s;
-}
-
-#animaciónRight {
-    animation: fadeInRight;
-    animation-duration: 5s;
-}

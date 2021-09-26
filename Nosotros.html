@@ -29,9 +29,33 @@
                 </ul>
             </nav>
         </header>
+        <header2 class="headerMobile">
+            <a class="headerMobile__logo" href="index.html">
+                <p class="headerMobile__logo__text">HOLOS</p>
+            </a>
+            <i class="fas fa-bars">
+                <ul class="menuList">
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="index.html">Home</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Nosotros.html">Portfolio</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Registro.html">Campus</a>
+                    </li>
+                    <li class="menuList__item">
+                        <a class="menuList__item__link" href="Cursos.html">Inscribirme</a>
+                    </li>
+                </ul>
+            </i>
+        </header2>
 
     <main class="mainPort">
-        <div class="mainPort__Texto1">
+        <div class="mainPort__Texto1" id="animaciónCenter">
             <h1 class="mainPort__Texto1__title">Dr. Agustín G. Salinas</h1>
             <h2 class="mainPort__Texto1__title2">Fundador y director de HOLOS</h2>
             <p class="mainPort__Texto1__parrafo">Soy médico recibido en la UBA en el año 2013. Mientras estaba terminando mis 
@@ -44,10 +68,10 @@
             tanto de los conocidos como los nuevos a experimentar. Actualmente soy el Vicepresidente por Argentina ante la Liga Medica
             Homeopática Argentina.</p>
         </div>
-        <div class="mainPort__Portrait">
+        <div class="mainPort__Portrait" id="animaciónLeft">
             <div class="mainPort__Portrait__img"></div>
         </div>
-        <div class="mainPort__Texto2">
+        <div class="mainPort__Texto2" id="animaciónCenter">
             <h2 class="mainPort__Texto2__title2">Experiencia y terapias</h2>
             <p class="mainPort__Texto2__parrafo">Hice cursos de Fitomedicina y Medicina Indígena Americana, así como de Nutrición 
             Ortomolecular. Me formé en Hidrología Médica de manera informal (al no haber en Argentina cursos regulares) trabajando durante 
@@ -60,13 +84,13 @@
             la salud, con el Dr. Ricardo Brizuela, quien es el presidente de la Asociación de Apiterapia Argentina, durante 2 años y
             actualmente la utilizo para tratamiento de artrosis y patologías osteoarticulares.</p>
         </div>
-        <div class="mainPort__Img">
+        <div class="mainPort__Img" id="animaciónRight">
             <div class="mainPort__Img__foto"></div>
         </div>
-        <div class="mainPort__pFoto">
+        <div class="mainPort__pFoto" id="animaciónLeft">
             <div class="mainPort__pFoto__img"></div>
         </div>
-        <div class="mainPort__Texto3">
+        <div class="mainPort__Texto3" id="animaciónCenter">
             <h2 class="mainPort__Texto3__title2">Fundación de HOLOS</h2>
             <p class="mainPort__Texto3__parrafo">En 2019 diseñé un curso de Homeopatía para Psicólogos y demás terapeutas del área de salud
             mental con el objetivo de extender la visión y el paradigma vitalista de la homeopatía a otras áreas distintas de la medicina 
@@ -83,15 +107,39 @@
 
 
 <footer class="iFooter">
-    <section class="iFooter__redes">
-        <a class="iFooter__redes__link" href=""><i class="fab fa-instagram-square"></i></a>
-        <a class="iFooter__redes__link" href=""><i class="fab fa-linkedin"></i></i></a>
-        <a class="iFooter__redes__link" href=""><i class="fab fa-whatsapp-square"></i></a>
+    <section class="iFooter__titleYpags">
+        <div class="iFooter__titleYpags__pags">
+            <a class="iFooter__titleYpags__pags__title" href="">HOLOS</a>
+            <ul class="iFooter__titleYpags__pags__list">
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="index.html">Home</a></li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Nosotros.html">Portfolio</a></li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Contacto.html">Contacto</a></li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Registro.html">Campus</a></li>
+                <li class="iFooter__titleYpags__pags__list__item">
+                    <a class="iFooter__titleYpags__pags__list__item__link" href="Cursos.html">Inscribirme</a></li>
+            </ul>
+            <div class="iFooter__titleYpags__pags__news">
+                <h3 class="iFooter__titleYpags__pags__news__title2">¿Querés recibir noticias? <br/> Suscribite a nuestro newspaper</h3>
+                <input class="iFooter__titleYpags__pags__news__input" type="email" placeholder="Email">
+                <button class="iFooter__titleYpags__pags__news__button">Subscribirse</button>
+            </div>
+        </div>
     </section>
-    <section class="iFooter__text">
-        <a class="iFooter__text__parrafos" href="">Terminos y condiciones</a>
-        <p class="iFooter__text__parrafos">|</p>
-        <a class="iFooter__text__parrafos" href="">Politica de privacidad</a>
+    <section class="iFooter__privYredes">
+        <div class="iFooter__privYredes__redes">
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-instagram"></i></a>
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-linkedin"></i></i></a>
+            <a class="iFooter__privYredes__redes__link" href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="iFooter__privYredes__copy"> Copyright HOLOS © 2021. Todos los derechos reservados.</p>
+        <div class="iFooter__privYredes__terminos">
+            <a class="iFooter__privYredes__terminos__link" href="">Terminos y Condiciones | </a>
+            <a class="iFooter__privYredes__terminos__link" href="">Política de Privacidad</a>
+        </div>
     </section>
 </footer>
 

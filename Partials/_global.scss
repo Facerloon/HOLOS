@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap'); /* font-family:'Kurale', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap'); /* font-family:'Cinzel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'); /* font-family: 'Comfortaa', cursive; */
+
+/* Funciones */
 
 @mixin Sizes($width, $height) {
     height: $height;
@@ -12,6 +15,30 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+/* Animaciones */
+
+#animaciónCenter {
+    animation: zoomIn;
+    animation-duration: 4s;
+}
+
+#animaciónLeft {
+    animation: fadeInLeft;
+    animation-duration: 5s;
+}
+
+#animaciónRight {
+    animation: fadeInRight;
+    animation-duration: 5s;
+}
+
+#animaciónDown {
+    animation: fadeInDown;
+    animation-duration: 5s;
+}
+
+/* Global */
 
 * {
     margin: 0;
@@ -34,6 +61,7 @@ html {
         &__text {
             margin-left: 3.5vw;
             font-size: 3.6em;
+            font-family: 'Comfortaa', cursive;
             color: cornsilk;
             text-decoration: none;
             text-align: center;
@@ -64,7 +92,7 @@ html {
 
             &__link {
                 font-family:'Cinzel', serif;
-                font-size: 15px;
+                font-size: 1.5em;
                 text-decoration: none;
                 color:cornsilk;
                 font-weight: lighter;
@@ -93,41 +121,117 @@ html {
     }
 }
 
+.headerMobile {
+    display: none;
+}
+
 .backgroundIndex {
     background-image: url(Multimedia/bodynew.jpg);
     background-size: cover;
 }
 
 .iFooter {
-    &__redes {
-        background-image: url(Multimedia/header.jpg);
-        height: 12vh;
-        @include Flexbox(flex, row, center, center);
+    height: 40vh;
+    background-color: black;
+    border: black 0.01em dashed;
 
-        &__link {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            margin-right: 8px;
+    &__titleYpags {
+        height: 25vh;
+        background-color: cornsilk;
+        &__pags {
+            @include Flexbox(flex, row, space-evenly, center);
 
-            i {
-                font-size: 2em;
+            &__title {
+                font-size: 4em;
+                font-family: 'Comfortaa', cursive;
+                color: black;
+                border-top: black .1em groove;
+                border-bottom: black .1em groove;
+                text-decoration: none;
+            }
+
+            &__list {
+                list-style-type: none;
+
+                &__item {
+                    display: inline;
+                    margin-right: 3em;
+
+                    &__link {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.7em;
+                        font-family:'Cinzel', serif;
+                        
+                        &:hover {
+                        border-bottom: black dashed 0.1em;
+                        animation: fadeIn;
+                        animation-duration: 1s;
+                        }
+                    }
+                }
+            }
+
+            &__news {
+                margin-top: 2vh;
+                margin-bottom: auto;
+
+                &__title2 {
+                    font-size: 1.8em;
+                    margin-bottom: 1.2em;
+                }
+
+                &__input {
+                    @include Sizes(20em, 2em);
+                    padding: .5em .5em;
+                    background-color: black;
+                    color: cornsilk;
+                    margin-bottom: 1.2em;
+                }
+
+                &__button {
+                    font-size: 1.8;
+                    display: block;
+                    background-color: cornflowerblue;
+                    border: cornflowerblue .1em solid;
+                    color: white;
+                    padding: .7em .7em;
+                }
+            }
+            
+        }
+    }
+
+    &__privYredes {
+        @include Flexbox(flex, row, space-evenly, center);
+        height: 15vh;
+
+        &__redes {
+            margin-left: 6%;
+            width: 20%;
+
+            &__link {
+                margin-left: 3%;
+                font-size: 2.8em;
+                text-decoration: none;
+                color: cornsilk;
+            }
+        }
+
+        &__copy {
+            width: 30%;
+            font-size: 1.4em;
+            color: rgb(255, 255, 255);
+        }
+
+        &__terminos {
+            width: auto;
+
+            &__link {
+                font-size: 1.4em;
+                text-decoration: none;
+                color: cornsilk;
             }
         }
     }
-    
-    &__text {
-        background-color: black;
-        @include Flexbox(flex, row, center, center);
-        height: 10vh;
-
-        &__parrafos {
-            text-align: center;
-            display: inline;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0.8em;
-        }
-
-    }   
 }

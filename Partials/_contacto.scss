@@ -1,4 +1,5 @@
 .mainContacto {
+    height: 160vh;
     margin-top: 0;
     display: grid;
     grid-template-areas:
@@ -80,6 +81,7 @@
         text-align: center;
         background-color:darkslategrey;
         width: 50%;
+        height: fit-content;
         margin-bottom: 5vh;
         margin-left: 22.5vw;
         padding: 4em;
@@ -98,7 +100,7 @@
         }
 
         &__nombre {
-            @include Sizes(15em, 3em);
+            @include Sizes(14em, 3em);
             font-size: 1.5em;
             margin: .8em .4em;
             color: white;
@@ -108,7 +110,7 @@
         }
 
         &__numero {
-            @include Sizes(15em, 3em);
+            @include Sizes(14em, 3em);
             font-size: 1.5em;
             margin: .8em .4em;
             color: white;

@@ -1,6 +1,41 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+/* font-family:'Kurale', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+/* font-family:'Cinzel', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/* font-family: 'Comfortaa', cursive; */
+/* Funciones */
+/* Animaciones */
+#animaciónCenter {
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#animaciónLeft {
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#animaciónRight {
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#animaciónDown {
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +72,7 @@ html {
 .iHeader__logo__text {
   margin-left: 3.5vw;
   font-size: 3.6em;
+  font-family: 'Comfortaa', cursive;
   color: cornsilk;
   text-decoration: none;
   text-align: center;
@@ -70,7 +106,7 @@ html {
 
 .iHeader__menu__lista .lista__item__link {
   font-family: 'Cinzel', serif;
-  font-size: 15px;
+  font-size: 1.5em;
   text-decoration: none;
   color: cornsilk;
   font-weight: lighter;
@@ -95,14 +131,27 @@ html {
   background-color: cornsilk;
 }
 
+.headerMobile {
+  display: none;
+}
+
 .backgroundIndex {
   background-image: url(Multimedia/bodynew.jpg);
   background-size: cover;
 }
 
-.iFooter__redes {
-  background-image: url(Multimedia/header.jpg);
-  height: 12vh;
+.iFooter {
+  height: 40vh;
+  background-color: black;
+  border: black 0.01em dashed;
+}
+
+.iFooter__titleYpags {
+  height: 25vh;
+  background-color: cornsilk;
+}
+
+.iFooter__titleYpags__pags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,26 +159,76 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.iFooter__redes__link {
+.iFooter__titleYpags__pags__title {
+  font-size: 4em;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  border-top: black .1em groove;
+  border-bottom: black .1em groove;
+  text-decoration: none;
+}
+
+.iFooter__titleYpags__pags__list {
+  list-style-type: none;
+}
+
+.iFooter__titleYpags__pags__list__item {
+  display: inline;
+  margin-right: 3em;
+}
+
+.iFooter__titleYpags__pags__list__item__link {
   text-decoration: none;
   color: black;
-  margin-right: 8px;
+  font-size: 1.7em;
+  font-family: 'Cinzel', serif;
 }
 
-.iFooter__redes__link i {
-  font-size: 2em;
+.iFooter__titleYpags__pags__list__item__link:hover {
+  border-bottom: black dashed 0.1em;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
-.iFooter__text {
+.iFooter__titleYpags__pags__news {
+  margin-top: 2vh;
+  margin-bottom: auto;
+}
+
+.iFooter__titleYpags__pags__news__title2 {
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
+}
+
+.iFooter__titleYpags__pags__news__input {
+  height: 2em;
+  width: 20em;
+  padding: .5em .5em;
   background-color: black;
+  color: cornsilk;
+  margin-bottom: 1.2em;
+}
+
+.iFooter__titleYpags__pags__news__button {
+  font-size: 1.8;
+  display: block;
+  background-color: cornflowerblue;
+  border: cornflowerblue .1em solid;
+  color: white;
+  padding: .7em .7em;
+}
+
+.iFooter__privYredes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,22 +236,41 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  height: 15vh;
 }
 
-.iFooter__text__parrafos {
-  text-align: center;
-  display: inline;
-  color: white;
+.iFooter__privYredes__redes {
+  margin-left: 6%;
+  width: 20%;
+}
+
+.iFooter__privYredes__redes__link {
+  margin-left: 3%;
+  font-size: 2.8em;
   text-decoration: none;
-  font-size: 1.2em;
-  margin: 0.8em;
+  color: cornsilk;
+}
+
+.iFooter__privYredes__copy {
+  width: 30%;
+  font-size: 1.4em;
+  color: white;
+}
+
+.iFooter__privYredes__terminos {
+  width: auto;
+}
+
+.iFooter__privYredes__terminos__link {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: cornsilk;
 }
 
 .welcomeIndex {
@@ -180,7 +298,6 @@ html {
 }
 
 .mainIndex {
-  height: 285vh;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "corte corte corte corte" "sec1 sec1 sec1 sec1" "corte1 corte1 corte1 corte1" "sec2 sec2 sec2 sec2" "corte2 corte2 corte2 corte2" "sec3 sec3 sec3 sec3";
@@ -195,8 +312,6 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: corte;
-  /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
   background-image: url(Multimedia/bodynew.jpg);
   background-position: top;
   padding: 0.3em;
@@ -237,8 +352,6 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: corte1;
-  /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
   background-image: url(Multimedia/bodynew.jpg);
   background-position: top;
   padding: 0.3em;
@@ -279,8 +392,6 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: corte2;
-  /*background-image: linear-gradient(to Right,rgb(107, 102, 102), rgb(65, 62, 62), rgb(12, 0, 0), black );
-        border: cornsilk double 0.3em;*/
   background-image: url(Multimedia/bodynew.jpg);
   background-position: top;
   padding: 0.3em;
@@ -315,27 +426,6 @@ html {
   height: 30%;
   margin-top: 23vh;
   margin-left: 50vw;
-}
-
-#animaciónCenter {
-  -webkit-animation: zoomIn;
-          animation: zoomIn;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-#animaciónLeft {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-#animaciónRight {
-  -webkit-animation: fadeInRight;
-          animation: fadeInRight;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
 }
 
 .mainPort {
@@ -374,7 +464,7 @@ html {
 
 .mainPort__Texto1__parrafo {
   color: cornsilk;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-align: center;
   padding: 1.5em 8em;
   margin-top: 2.5vh;
@@ -421,7 +511,7 @@ html {
 
 .mainPort__Texto2__parrafo {
   color: cornsilk;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-align: center;
   padding: 1.5em 8em;
 }
@@ -433,17 +523,17 @@ html {
   background-color: black;
   padding: 2em 2em;
   height: 63vh;
-  width: 25vw;
+  width: 30vw;
   border-radius: 3em;
   margin-top: 5vh;
-  margin-left: 6vw;
+  margin-left: 3vw;
 }
 
 .mainPort__Img__foto {
-  background-color: cornsilk;
+  background-image: url(Multimedia/Nos1.jpg);
   background-size: cover;
   height: 63vh;
-  width: 25vw;
+  width: 30vw;
 }
 
 .mainPort__pFoto {
@@ -453,7 +543,7 @@ html {
   grid-area: pFoto;
   background-color: black;
   padding: 2em 2em;
-  height: 42vh;
+  height: 50vh;
   width: 53vw;
   border-radius: 3em;
   margin-left: 10vw;
@@ -461,9 +551,9 @@ html {
 }
 
 .mainPort__pFoto__img {
-  background-color: cornsilk;
+  background-image: url(Multimedia/Nos2.jpg);
   background-size: cover;
-  height: 42vh;
+  height: 50vh;
   width: 53vw;
 }
 
@@ -488,12 +578,13 @@ html {
 
 .mainPort__Texto3__parrafo {
   color: cornsilk;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-align: center;
   padding: 1.5em 8em;
 }
 
 .mainContacto {
+  height: 160vh;
   margin-top: 0;
   display: -ms-grid;
   display: grid;
@@ -591,6 +682,9 @@ html {
   text-align: center;
   background-color: darkslategrey;
   width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 5vh;
   margin-left: 22.5vw;
   padding: 4em;
@@ -610,7 +704,7 @@ html {
 
 .mainContacto__iFormularios__nombre {
   height: 3em;
-  width: 15em;
+  width: 14em;
   font-size: 1.5em;
   margin: .8em .4em;
   color: white;
@@ -621,7 +715,7 @@ html {
 
 .mainContacto__iFormularios__numero {
   height: 3em;
-  width: 15em;
+  width: 14em;
   font-size: 1.5em;
   margin: .8em .4em;
   color: white;
@@ -784,7 +878,7 @@ html {
   color: cornsilk;
 }
 
-.mainCLista__lista__item__curso button {
+.mainCLista__lista__item__curso__button {
   text-decoration: none;
   padding: 0.2em;
   background-color: cornsilk;
@@ -792,40 +886,8 @@ html {
   font-size: 2em;
 }
 
-.mainCLista__lista__item__curso button:hover {
-  background-color: #0099ff;
-}
-
-/* -------------- Offcanvas -------------- */
-#offcanvasRight {
-  background-color: cornsilk;
-}
-
-.offcanvas-header h5 {
-  font-size: 3em;
-}
-
-.offcanvas-body__parrafo {
-  font-size: 1.5em;
-}
-
-.offcanvas-body__req {
-  font-size: 1.5em;
-  font-weight: bolder;
-  display: inline;
-}
-
-.offcanvas-body__req__text {
-  font-size: 1.5em;
-  display: inline;
-}
-
-.offcanvas-body__button {
-  font-size: 1.7em;
-  text-decoration: none;
-  padding: 0.3em;
-  color: white;
-  background-color: #1482dc;
+.mainCLista__lista__item__curso__button:hover {
+  color: #0099ff;
 }
 
 .bodyReg {
@@ -865,6 +927,7 @@ html {
 
 .mainReg__mainTitle__text {
   font-size: 5em;
+  font-family: 'Comfortaa', cursive;
   color: cornsilk;
   text-decoration: none;
   text-align: center;
@@ -995,6 +1058,7 @@ html {
 
 .mainCampus__sideHeader__title__text {
   font-size: 3em;
+  font-family: 'Comfortaa', cursive;
   margin-right: 55vw;
   color: black;
   text-decoration: none;
@@ -1033,15 +1097,20 @@ html {
 
 .mainCampus__navBar__text {
   font-size: 3.6em;
+  font-family: 'Comfortaa', cursive;
   color: black;
   text-decoration: none;
   text-align: center;
   border-top: black 0.1em groove;
   border-bottom: black 0.1em groove;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mainCampus__navBar__nav {
   padding: 4em 2em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mainCampus__navBar__nav__lista {
@@ -1068,496 +1137,1504 @@ html {
   background-color: #f6e0bd;
 }
 
+.mainCampus__navMobile {
+  display: none;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* ------------- GLOBAL ------------- */
   .iHeader {
-    height: 10vh;
+    display: none;
   }
-  .iHeader__imagen {
-    height: 3em;
-    width: 3em;
+  .headerMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 8vh;
+    margin-bottom: 20vh;
   }
-  .iHeader__menu {
-    width: 90%;
+  .headerMobile__logo {
+    text-decoration: none;
   }
-  .iHeader .lista__item {
-    display: inline-block;
+  .headerMobile__logo__text {
+    font-size: 2.3em;
+    font-family: 'Comfortaa', cursive;
+    color: cornsilk;
+    text-decoration: none;
+    text-align: center;
+    border-top: cornsilk 0.1em groove;
+    border-bottom: cornsilk 0.1em groove;
+    margin-left: 2vw;
+    margin-top: 5%;
   }
-  .iHeader .lista__item__link {
-    font-size: 7px;
+  .headerMobile i {
+    color: cornsilk;
+    font-size: 3em;
+    margin-right: 6vw;
   }
-  .iHeader .lista__item--paginaActual {
-    border-bottom: 1px dashed cornsilk;
+  .headerMobile i .menuList {
+    list-style: none;
+    position: absolute;
+    display: none;
+    background-color: black;
+    right: 1em;
   }
-  .iHeader .lista__item--aIns a {
-    padding: 0px;
-    color: black;
-    background-color: cornsilk;
+  .headerMobile i .menuList__item {
+    margin: 0;
+    position: relative;
+    margin-bottom: .2vh;
+    border: cornsilk .1em solid;
+  }
+  .headerMobile i .menuList__item__link {
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.4em;
+    color: cornsilk;
+    display: block;
+  }
+  .headerMobile i:hover .menuList {
+    display: block;
   }
   .iFooter {
-    height: 4vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .iFooter__redes__link i {
+  .iFooter__titleYpags {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
+  }
+  .iFooter__titleYpags__pags__title {
+    font-size: 2em;
+  }
+  .iFooter__titleYpags__pags__list__item {
+    display: block;
+    margin-left: .7em;
+  }
+  .iFooter__titleYpags__pags__list__item__link {
+    font-size: 1em;
+  }
+  .iFooter__titleYpags__pags__news__title2 {
+    font-size: 1.1em;
+  }
+  .iFooter__titleYpags__pags__news__input {
+    height: 1em;
+    width: 8em;
+  }
+  .iFooter__titleYpags__pags__news__button {
+    font-size: 1em;
+  }
+  .iFooter__privYredes {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
+  }
+  .iFooter__privYredes__redes {
+    margin-left: 42%;
+    margin-right: auto;
+  }
+  .iFooter__privYredes__redes__link {
+    font-size: 1em;
+  }
+  .iFooter__privYredes__copy {
+    font-size: .8em;
+  }
+  .iFooter__privYredes__terminos__link {
+    font-size: .8em;
+  }
+  /* ------------ INDEX ------------ */
+  .welcomeIndex__square__title {
     font-size: 1.5em;
   }
-  .iFooter__text__parrafos {
-    font-size: 0.8em;
+  .welcomeIndex__square__text {
+    font-size: 1em;
   }
   .mainIndex {
     display: block;
-    height: 140vh;
   }
-  .mainIndex__seccion1 {
-    padding: 10px;
-    margin: 1rem 1rem;
+  .mainIndex__corte {
+    height: 11.2vh;
   }
-  .mainIndex__seccion1__titulo {
-    font-size: 16px;
-    text-decoration: none;
-  }
-  .mainIndex__seccion1__parrafo {
-    font-size: 12px;
-  }
-  .mainIndex__seccion2 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion3 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion3__titulo2 {
-    font-size: 12px;
-  }
-  .mainIndex__seccion3__parrafo {
-    font-size: 8px;
-  }
-  .mainIndex__seccion4 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion4__titulo2 {
-    font-size: 12px;
-  }
-  .mainIndex__seccion4__parrafo {
-    font-size: 8px;
-  }
-  .mainIndex__seccion5 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion6 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion7 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion7__titulo2 {
-    font-size: 12px;
-  }
-  .mainIndex__seccion7__parrafo {
-    font-size: 8px;
-  }
-  .mainPort {
-    height: 90vh;
-  }
-  .mainPort__seccion1 {
-    padding: 1em;
-    margin: 1em 1em;
-    display: block;
-  }
-  .mainPort__seccion1__titulo {
-    font-size: 1.5em;
+  .mainIndex__corte__text {
+    font-size: 1.2em;
     margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
   }
-  .mainPort__seccion1__parrafo {
-    font-size: 0.9em;
-    margin-top: 0.5em;
-  }
-  .mainPort__seccion1__imagen {
-    height: 18em;
-    width: 14em;
-    margin: 1rem 1rem;
-  }
-  .mainContacto {
-    display: block;
-  }
-  .mainContacto__map {
-    width: 80%;
-    margin: 5em 10%;
-    padding: 1em 1em;
-  }
-  .mainContacto__infoDeC {
-    margin: 1rem 1rem;
-    padding: 10px;
-  }
-  .mainContacto__infoDeC__titulo {
-    font-size: 18px;
-  }
-  .mainContacto__infoDeC__parrafo {
-    font-size: 10px;
-  }
-  .mainContacto__iFormularios {
-    margin: 1rem 1rem;
-    padding: 10px;
-  }
-  .mainContacto__iFormularios__titulo {
-    font-size: 18px;
-  }
-  .mainContacto__iFormularios p {
-    font-size: 10px;
-  }
-  .regHeader__img i {
-    font-size: 0.5em;
-  }
-  .mainReg {
-    width: 60%;
-    margin: 5rem 5rem;
-    padding: 2em;
-    height: 70vh;
-  }
-  .mainReg__form {
+  .mainIndex__sec1__text {
     font-size: 1em;
   }
-  .mainReg__pic img {
-    height: 6em;
-    width: 6em;
+  .mainIndex__corte1 {
+    height: 11.2vh;
   }
+  .mainIndex__corte1__text {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 65vw;
+  }
+  .mainIndex__sec2__text {
+    font-size: 1em;
+  }
+  .mainIndex__corte2 {
+    height: 11.2vh;
+  }
+  .mainIndex__corte2__text {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
+  }
+  .mainIndex__sec3 {
+    margin-bottom: 0vh;
+  }
+  .mainIndex__sec3__text {
+    font-size: 1em;
+  }
+  /* ------------ PORTFOLIO ------------ */
+  .mainPort {
+    display: block;
+  }
+  .mainPort__Texto1 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto1__title {
+    font-size: 1em;
+  }
+  .mainPort__Texto1__title2 {
+    font-size: .8em;
+  }
+  .mainPort__Texto1__parrafo {
+    font-size: .8em;
+  }
+  .mainPort__Portrait {
+    height: 80vh;
+    width: 68%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__Portrait__img {
+    height: 78vh;
+    width: 99%;
+    background-position: top;
+    padding: 0;
+    margin: 0;
+  }
+  .mainPort__Texto2 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto2__title2 {
+    font-size: .8em;
+  }
+  .mainPort__Texto2__parrafo {
+    font-size: .8em;
+  }
+  .mainPort__Img {
+    height: 40vh;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__Img__foto {
+    height: 38vh;
+    width: 99%;
+  }
+  .mainPort__pFoto {
+    height: 40vh;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__pFoto__img {
+    height: 38vh;
+    width: 99%;
+  }
+  .mainPort__Texto3 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto3__title2 {
+    font-size: .8em;
+  }
+  .mainPort__Texto3__parrafo {
+    font-size: .8em;
+  }
+  /* ------------ CONTACTO ------------ */
+  .mainContacto {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mainContacto__Info1 {
+    display: block;
+    padding: 1em 1em;
+  }
+  .mainContacto__Info1__flexDivs1 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs1__title {
+    font-size: 1em;
+  }
+  .mainContacto__Info1__flexDivs1__parrafo {
+    font-size: 1em;
+  }
+  .mainContacto__Info1__flexDivs2 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs2__title {
+    font-size: 1em;
+  }
+  .mainContacto__Info1__flexDivs2__parrafo {
+    font-size: 1em;
+  }
+  .mainContacto__Info1__flexDivs3 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs3__title {
+    font-size: 1em;
+  }
+  .mainContacto__Info1__flexDivs3__parrafo {
+    font-size: 1em;
+  }
+  .mainContacto__iFormularios {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__iFormularios__title {
+    font-size: 1em;
+  }
+  .mainContacto__iFormularios__parrafo {
+    font-size: 1em;
+  }
+  .mainContacto__iFormularios__nombre {
+    height: 3em;
+    width: 12em;
+    font-size: 1em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__numero {
+    height: 3em;
+    width: 12em;
+    font-size: 1em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__mail {
+    height: 3em;
+    width: 24em;
+    font-size: 1em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__mensaje {
+    min-width: 15em;
+    min-height: 5em;
+    max-width: 24em;
+    max-height: 15em;
+    height: 5em;
+    width: 24em;
+    font-size: 1em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__boton {
+    height: 3em;
+    width: 15em;
+    font-size: 1em;
+    padding: 0 1em;
+  }
+  /* ------------ REGISTRO ------------ */
+  .bodyReg {
+    background-image: url(Multimedia/corteIndex.jpg);
+  }
+  .mainReg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5em 1.5em;
+  }
+  .mainReg__mainTitle__text {
+    font-size: 3em;
+  }
+  .mainReg__titulo2 {
+    font-size: 2em;
+  }
+  .mainReg__Form__correo {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    border: solid .1em white;
+    padding: 1em;
+  }
+  .mainReg__Form__contraseña {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mainReg__Form__mSesionLabel {
+    font-size: 1em;
+  }
+  .mainReg__Form__link {
+    font-size: 1em;
+  }
+  /* ------------ CURSOS ------------ */
   .mainCursos {
-    height: 90vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .mainCursos__lista {
     display: block;
   }
   .mainCursos__lista__item__curso {
-    height: 14em;
-    width: 60%;
-    padding: 1px 1px;
-    margin-left: 20%;
-    margin-bottom: 2%;
+    padding: 1em 1em;
+    height: 40vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
   }
   .mainCursos__lista__item__curso:hover {
-    height: 24em;
+    height: 80vh;
   }
   .mainCursos__lista__item__curso img {
-    margin-top: 5%;
-    height: 8em;
-    width: 13em;
+    height: 40vh;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .mainCursos__lista__item__curso__titulo {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .mainCursos__lista__item__curso__info {
-    font-size: 0.7em;
+    font-size: 1em;
   }
   .mainCursos__lista__item__curso__button {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
+  /* ------------ CURSOS LISTA ------------ */
   .mainCLista {
-    height: 140vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .mainCLista__lista {
-    display: block;
-  }
-  .mainCLista__lista__item__curso {
-    margin: 2rem 2rem;
-  }
-  .mainCLista__lista__item__curso__titulo {
-    font-size: 16px;
-  }
-  .mainCLista__lista__item__curso__info2 {
-    font-size: 10px;
-  }
-  .mainCLista__lista__item__curso__button {
-    font-size: 10px;
-  }
-  .mainCLista {
-    height: 90vh;
-  }
-  .mainCLista__lista {
-    margin-top: 8vh;
     display: block;
   }
   .mainCLista__lista__item {
     width: 70%;
-    margin-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
   }
   .mainCLista__lista__item__curso {
-    padding: 3em;
+    padding: 2em;
     height: 20em;
   }
   .mainCLista__lista__item__curso__titulo {
     font-size: 1.3em;
   }
   .mainCLista__lista__item__curso__info {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
   .mainCLista__lista__item__curso__info2 {
-    font-size: 0.9em;
+    font-weight: bold;
+    font-size: 1.1em;
   }
-  .mainCLista__lista__item__curso button {
+  .mainCLista__lista__item__curso__button {
+    font-size: 1.2em;
+  }
+  .mainCLista__lista__item__curso__button:hover {
+    color: #0099ff;
+  }
+  /* ------------ CAMPUS ------------ */
+  .mainCampus {
+    display: block;
+  }
+  .mainCampus__sideHeader {
+    display: none;
+  }
+  .mainCampus__navBar {
+    display: none;
+  }
+  .mainCampus__navMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: cornsilk;
+    height: 10vh;
+    border-bottom: double black .1em;
+  }
+  .mainCampus__navMobile__headline {
+    width: 30%;
+    margin-left: 2%;
+  }
+  .mainCampus__navMobile__headline__title2 {
+    font-size: 1.2em;
+  }
+  .mainCampus__navMobile__headline__titel3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .mainCampus__navMobile__nav {
+    width: 70%;
+    margin-left: 0;
+  }
+  .mainCampus__navMobile__nav__lista {
+    list-style: none;
+    text-align: end;
+  }
+  .mainCampus__navMobile__nav__lista__item {
+    display: inline;
+    margin-left: 3%;
+  }
+  .mainCampus__navMobile__nav__lista__item__link {
+    font-size: 1.3em;
     text-decoration: none;
-    padding: 0.2em;
-    background-color: black;
-    color: white;
-    font-size: 1.2em;
+    color: black;
   }
-  .mainCLista__lista__item__curso button:hover {
-    background-color: #0099ff;
+  .mainCampus__mainContent {
+    height: 100vh;
   }
-  .offcanvas-header h5 {
+  /* --------- 404 ---------- */
+  .main404 {
+    display: block;
+    height: 100vh;
+  }
+  .main404__error i {
+    font-size: 8em;
+  }
+  .main404__error__titulo {
+    font-size: 3em;
+  }
+  .main404__error__parrafo {
     font-size: 2em;
-  }
-  .offcanvas-body__parrafo {
-    font-size: 1.2em;
-  }
-  .offcanvas-body__req {
-    font-size: 1.2em;
-  }
-  .offcanvas-body__req__text {
-    font-size: 1.2em;
-  }
-  .offcanvas-body__button {
-    font-size: 1.5em;
-  }
-  .main404 i {
-    font-size: 7em;
-  }
-  .main404__titulo {
-    font-size: 2.6em;
-  }
-  .main404__parrafo {
-    font-size: 1.2em;
+    color: cornsilk;
   }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1100px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* ------------- GLOBAL ------------- */
   .iHeader {
-    height: 10vh;
+    display: none;
   }
-  .iHeader__imagen {
-    height: 40px;
-    width: 40px;
+  .headerMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 8vh;
+    margin-bottom: 20vh;
   }
-  .iHeader__menu {
-    width: 80%;
+  .headerMobile__logo {
+    text-decoration: none;
   }
-  .iHeader .lista__item {
-    display: inline-block;
+  .headerMobile__logo__text {
+    font-size: 3em;
+    color: cornsilk;
+    text-decoration: none;
+    text-align: center;
+    border-top: cornsilk 0.1em groove;
+    border-bottom: cornsilk 0.1em groove;
+    margin-left: 2vw;
+    margin-top: 5%;
   }
-  .iHeader .lista__item__link {
-    font-size: 9px;
+  .headerMobile i {
+    color: cornsilk;
+    font-size: 3.5em;
+    margin-right: 6vw;
   }
-  .iHeader .lista__item--paginaActual {
-    border-bottom: 2px dashed cornsilk;
+  .headerMobile i .menuList {
+    list-style: none;
+    position: absolute;
+    display: none;
+    background-color: black;
+    right: 1em;
   }
-  .iHeader .lista__item--aIns a {
-    padding: 0px;
-    color: black;
-    background-color: cornsilk;
+  .headerMobile i .menuList__item {
+    margin: 0;
+    position: relative;
+    margin-bottom: .2vh;
+    border: cornsilk .1em solid;
+  }
+  .headerMobile i .menuList__item__link {
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.6em;
+    color: cornsilk;
+    display: block;
+  }
+  .headerMobile i:hover .menuList {
+    display: block;
   }
   .iFooter {
-    height: 4vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .iFooter__parrafo {
-    margin-right: 5px;
-    font-size: 7px;
-    color: #d2d6cd;
+  .iFooter__titleYpags {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
   }
-  .iFooter__imagen {
-    margin: 2px;
-    height: 10px;
-    width: 10px;
+  .iFooter__titleYpags__pags__title {
+    font-size: 2.3em;
+  }
+  .iFooter__titleYpags__pags__list__item {
+    display: block;
+    margin-left: .7em;
+  }
+  .iFooter__titleYpags__pags__list__item__link {
+    font-size: 1.2em;
+  }
+  .iFooter__titleYpags__pags__news__title2 {
+    font-size: 1.3em;
+  }
+  .iFooter__titleYpags__pags__news__input {
+    height: 1em;
+    width: 12em;
+  }
+  .iFooter__titleYpags__pags__news__button {
+    font-size: 1.2em;
+  }
+  .iFooter__privYredes {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
+  }
+  .iFooter__privYredes__redes {
+    margin-left: 42%;
+    margin-right: auto;
+  }
+  .iFooter__privYredes__redes__link {
+    font-size: 1.4em;
+  }
+  .iFooter__privYredes__copy {
+    font-size: 1.1em;
+  }
+  .iFooter__privYredes__terminos__link {
+    font-size: 1em;
+  }
+  /* ------------ INDEX ------------ */
+  .welcomeIndex__square__title {
+    font-size: 2em;
+  }
+  .welcomeIndex__square__text {
+    font-size: 1.4em;
   }
   .mainIndex {
     display: block;
-    height: 140vh;
   }
-  .mainIndex__seccion1 {
-    padding: 10px;
-    margin: 1rem 1rem;
+  .mainIndex__corte {
+    height: 11.2vh;
   }
-  .mainIndex__seccion1__titulo {
-    font-size: 16px;
-    text-decoration: none;
+  .mainIndex__corte__text {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
   }
-  .mainIndex__seccion1__parrafo {
-    font-size: 13px;
-  }
-  .mainIndex__seccion2 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion3 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion3__titulo2 {
-    font-size: 14px;
-  }
-  .mainIndex__seccion3__parrafo {
-    font-size: 10px;
-  }
-  .mainIndex__seccion4 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion4__titulo2 {
-    font-size: 14px;
-  }
-  .mainIndex__seccion4__parrafo {
-    font-size: 10px;
-  }
-  .mainIndex__seccion5 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion6 {
-    margin: 1rem 0;
-    height: 15%;
-    width: 100%;
-  }
-  .mainIndex__seccion7 {
-    padding: 10px;
-    margin: 1rem 1rem;
-  }
-  .mainIndex__seccion7__titulo2 {
-    font-size: 14px;
-  }
-  .mainIndex__seccion7__parrafo {
-    font-size: 10px;
-  }
-  .mainPort {
-    height: 90vh;
-  }
-  .mainPort__seccion1 {
-    padding: 10px;
-    margin: 1rem 1rem;
-    display: block;
-  }
-  .mainPort__seccion1__titulo {
-    font-size: 18px;
-  }
-  .mainPort__seccion1__parrafo {
-    font-size: 11px;
-  }
-  .mainPort__seccion1__imagen {
-    height: 200px;
-    width: 140px;
-    margin: 1rem 1rem;
-  }
-  .mainContacto {
-    display: block;
-  }
-  .mainContacto__map {
-    width: 90%;
-    margin-left: 5%;
-    padding: 2em 2em;
-  }
-  .mainContacto__infoDeC {
-    margin: 1rem 1rem;
-    padding: 10px;
-  }
-  .mainContacto__infoDeC__titulo {
-    font-size: 18px;
-  }
-  .mainContacto__infoDeC__parrafo {
-    font-size: 13px;
-  }
-  .mainContacto__iFormularios {
-    margin: 1rem 1rem;
-    padding: 10px;
-  }
-  .mainContacto__iFormularios__titulo {
-    font-size: 18px;
-  }
-  .mainContacto__iFormularios p {
-    font-size: 10px;
-  }
-  .mainReg {
-    width: 60%;
-    margin: 5em 5em;
-    margin-left: 20%;
-    padding: 2em;
-    height: 100vh;
-  }
-  .mainReg__form {
+  .mainIndex__sec1__text {
     font-size: 1em;
   }
-  .mainReg__pic img {
-    height: 10em;
-    width: 10em;
+  .mainIndex__corte1 {
+    height: 11.2vh;
   }
+  .mainIndex__corte1__text {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 65vw;
+  }
+  .mainIndex__sec2__text {
+    font-size: 1em;
+  }
+  .mainIndex__corte2 {
+    height: 11.2vh;
+  }
+  .mainIndex__corte2__text {
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
+  }
+  .mainIndex__sec3 {
+    margin-bottom: 0vh;
+  }
+  .mainIndex__sec3__text {
+    font-size: 1em;
+  }
+  /* ------------ PORTFOLIO ------------ */
+  .mainPort {
+    display: block;
+  }
+  .mainPort__Texto1 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto1__title {
+    font-size: 1.2em;
+  }
+  .mainPort__Texto1__title2 {
+    font-size: 1em;
+  }
+  .mainPort__Texto1__parrafo {
+    font-size: .9em;
+  }
+  .mainPort__Portrait {
+    height: 80vh;
+    width: 68%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__Portrait__img {
+    height: 80vh;
+    width: 100%;
+    background-position: top;
+    padding: 0;
+    margin: 0;
+  }
+  .mainPort__Texto2 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto2__title2 {
+    font-size: 1em;
+  }
+  .mainPort__Texto2__parrafo {
+    font-size: .9em;
+  }
+  .mainPort__Img {
+    height: 40vh;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__Img__foto {
+    height: 40vh;
+    width: 100%;
+  }
+  .mainPort__pFoto {
+    height: 40vh;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+  }
+  .mainPort__pFoto__img {
+    height: 40vh;
+    width: 100%;
+  }
+  .mainPort__Texto3 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto3__title2 {
+    font-size: 1em;
+  }
+  .mainPort__Texto3__parrafo {
+    font-size: .9em;
+  }
+  /* ------------ CONTACTO ------------ */
+  .mainContacto {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .mainContacto__Info1 {
+    display: block;
+    padding: 1em 1em;
+  }
+  .mainContacto__Info1__flexDivs1 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs1__title {
+    font-size: 1.3em;
+  }
+  .mainContacto__Info1__flexDivs1__parrafo {
+    font-size: 1.2em;
+  }
+  .mainContacto__Info1__flexDivs2 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs2__title {
+    font-size: 1.3em;
+  }
+  .mainContacto__Info1__flexDivs2__parrafo {
+    font-size: 1.2em;
+  }
+  .mainContacto__Info1__flexDivs3 {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs3__title {
+    font-size: 1.3em;
+  }
+  .mainContacto__Info1__flexDivs3__parrafo {
+    font-size: 1.2em;
+  }
+  .mainContacto__iFormularios {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__iFormularios__title {
+    font-size: 1.3em;
+  }
+  .mainContacto__iFormularios__parrafo {
+    font-size: 1.2em;
+  }
+  .mainContacto__iFormularios__nombre {
+    height: 3em;
+    width: 12em;
+    font-size: 1.3em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__numero {
+    height: 3em;
+    width: 12em;
+    font-size: 1.3em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__mail {
+    height: 3em;
+    width: 24em;
+    font-size: 1.3em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__mensaje {
+    min-width: 15em;
+    min-height: 5em;
+    max-width: 24em;
+    max-height: 15em;
+    height: 5em;
+    width: 24em;
+    font-size: 1.2em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__boton {
+    height: 3em;
+    width: 15em;
+    font-size: 1.3em;
+    padding: 0 1em;
+  }
+  /* ------------ REGISTRO ------------ */
+  .bodyReg {
+    background-image: url(Multimedia/corteIndex.jpg);
+  }
+  .mainReg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5em 1.5em;
+  }
+  .mainReg__mainTitle__text {
+    font-size: 3.2em;
+  }
+  .mainReg__titulo2 {
+    font-size: 2.2em;
+  }
+  .mainReg__Form__correo {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    border: solid .1em white;
+    padding: 1em;
+  }
+  .mainReg__Form__contraseña {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mainReg__Form__mSesionLabel {
+    font-size: 1.2em;
+  }
+  .mainReg__Form__link {
+    font-size: 1.2em;
+  }
+  /* ------------ CURSOS ------------ */
   .mainCursos {
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .mainCursos__lista {
     display: block;
   }
-  .mainCursos__lista__item {
-    margin: 0 2rem;
-    margin-left: 16%;
-  }
   .mainCursos__lista__item__curso {
-    padding: 8%;
-    width: 60%;
-    height: 18.6em;
-    margin-bottom: 3rem;
+    padding: 1em 1em;
+    height: 40vh;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
   }
   .mainCursos__lista__item__curso:hover {
-    height: 40em;
+    height: 80vh;
   }
   .mainCursos__lista__item__curso img {
-    height: 17em;
-    width: 30em;
+    height: 40vh;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .mainCursos__lista__item__curso__titulo {
-    font-size: 2em;
-  }
-  .mainCursos__lista__item__curso__info {
     font-size: 1.4em;
   }
-  .mainCursos__lista__item__curso__button {
-    font-size: 1.5em;
-    padding: 0.5em 0.5em;
-    margin-top: 1em;
+  .mainCursos__lista__item__curso__info {
+    font-size: 1.2em;
   }
+  .mainCursos__lista__item__curso__button {
+    font-size: 1.2em;
+  }
+  /* ------------ CURSOS LISTA ------------ */
   .mainCLista {
-    height: 110vh;
+    height: 170vh;
   }
   .mainCLista__lista {
     display: block;
   }
   .mainCLista__lista__item {
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6vh;
   }
   .mainCLista__lista__item__curso {
-    margin: 2em 2em;
+    padding: 2em;
+    height: 20em;
   }
   .mainCLista__lista__item__curso__titulo {
-    font-size: 2.5em;
+    font-size: 1.7em;
+  }
+  .mainCLista__lista__item__curso__info {
+    font-size: 1.4em;
   }
   .mainCLista__lista__item__curso__info2 {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
   .mainCLista__lista__item__curso__button {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
-  .main404 i {
-    font-size: 12em;
+  .mainCLista__lista__item__curso__button:hover {
+    color: #0099ff;
   }
-  .main404__titulo {
+  /* ------------ CAMPUS ------------ */
+  .mainCampus {
+    display: block;
+  }
+  .mainCampus__sideHeader {
+    display: none;
+  }
+  .mainCampus__navBar {
+    display: none;
+  }
+  .mainCampus__navMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: cornsilk;
+    height: 10vh;
+    border-bottom: double black .1em;
+  }
+  .mainCampus__navMobile__headline {
+    width: 30%;
+    margin-left: 2%;
+  }
+  .mainCampus__navMobile__headline__title2 {
+    font-size: 1.6em;
+  }
+  .mainCampus__navMobile__headline__titel3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .mainCampus__navMobile__nav {
+    width: 70%;
+    margin-left: 0;
+  }
+  .mainCampus__navMobile__nav__lista {
+    list-style: none;
+    text-align: end;
+  }
+  .mainCampus__navMobile__nav__lista__item {
+    display: inline;
+    margin-left: 3%;
+  }
+  .mainCampus__navMobile__nav__lista__item__link {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+  }
+  .mainCampus__mainContent {
+    height: 100vh;
+  }
+  .main404 {
+    display: block;
+    height: 100vh;
+  }
+  .main404__error i {
+    font-size: 9em;
+  }
+  .main404__error__titulo {
+    font-size: 4em;
+  }
+  .main404__error__parrafo {
+    font-size: 2.2em;
+    color: cornsilk;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* ------------- GLOBAL ------------- */
+  .iHeader__menu__lista .lista__item__link {
+    font-size: 1.2em;
+  }
+  .headerMobile {
+    display: none;
+  }
+  .iFooter {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .iFooter__titleYpags {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
+  }
+  .iFooter__titleYpags__pags__title {
+    font-size: 3.3em;
+  }
+  .iFooter__titleYpags__pags__list__item {
+    display: block;
+    margin-left: .7em;
+  }
+  .iFooter__titleYpags__pags__list__item__link {
+    font-size: 1.4em;
+  }
+  .iFooter__titleYpags__pags__news__title2 {
+    font-size: 1.4em;
+  }
+  .iFooter__titleYpags__pags__news__input {
+    height: 1em;
+    width: 12em;
+  }
+  .iFooter__titleYpags__pags__news__button {
+    font-size: 1.3em;
+  }
+  .iFooter__privYredes {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em .5em;
+  }
+  .iFooter__privYredes__redes {
+    margin-left: 42%;
+    margin-right: auto;
+  }
+  .iFooter__privYredes__redes__link {
+    font-size: 1.6em;
+  }
+  .iFooter__privYredes__copy {
+    font-size: 1.3em;
+  }
+  .iFooter__privYredes__terminos__link {
+    font-size: 1.1em;
+  }
+  /* ------------ INDEX ------------ */
+  .welcomeIndex__square__title {
     font-size: 3em;
   }
-  .main404__parrafo {
-    font-size: 1.5em;
+  .welcomeIndex__square__text {
+    font-size: 1.6em;
+  }
+  .mainIndex {
+    display: block;
+  }
+  .mainIndex__corte {
+    height: 11.2vh;
+  }
+  .mainIndex__corte__text {
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
+  }
+  .mainIndex__sec1__text {
+    font-size: 1.2em;
+  }
+  .mainIndex__corte1 {
+    height: 11.2vh;
+  }
+  .mainIndex__corte1__text {
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 65vw;
+  }
+  .mainIndex__sec2__text {
+    font-size: 1.2em;
+  }
+  .mainIndex__corte2 {
+    height: 11.2vh;
+  }
+  .mainIndex__corte2__text {
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: 5vh;
+    margin-left: 4vw;
+  }
+  .mainIndex__sec3 {
+    margin-bottom: 0vh;
+  }
+  .mainIndex__sec3__text {
+    font-size: 1.2em;
+  }
+  /* ------------ PORTFOLIO ------------ */
+  .mainPort__Texto1 {
+    margin-left: 8%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto1__title {
+    font-size: 1.4em;
+  }
+  .mainPort__Texto1__title2 {
+    font-size: 1.2em;
+  }
+  .mainPort__Texto1__parrafo {
+    font-size: 1.1em;
+  }
+  .mainPort__Portrait {
+    height: 60vh;
+    width: 68%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
+  .mainPort__Portrait__img {
+    height: 60vh;
+    width: 99%;
+    background-position: top;
+    padding: 0;
+    margin: 0;
+  }
+  .mainPort__Texto2 {
+    margin-left: 32%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto2__title2 {
+    font-size: 1.2em;
+  }
+  .mainPort__Texto2__parrafo {
+    font-size: 1.1em;
+  }
+  .mainPort__Img {
+    height: 50vh;
+    width: 60%;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+  .mainPort__Img__foto {
+    height: 50vh;
+    width: 99%;
+  }
+  .mainPort__pFoto {
+    height: 40vh;
+    width: 70%;
+    margin-left: 50%;
+    margin-bottom: 10vh;
+    margin-top: 10%;
+  }
+  .mainPort__pFoto__img {
+    height: 38vh;
+    width: 99%;
+  }
+  .mainPort__Texto3 {
+    margin-left: 15%;
+    width: 68%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+    padding-top: 1em;
+  }
+  .mainPort__Texto3__title2 {
+    font-size: 1.2em;
+  }
+  .mainPort__Texto3__parrafo {
+    font-size: 1.1em;
+  }
+  /* ------------ CONTACTO ------------ */
+  .mainContacto {
+    height: 170vh;
+  }
+  .mainContacto__Info1 {
+    padding: 1em 1em;
+  }
+  .mainContacto__Info1__flexDivs1 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs1__title {
+    font-size: 1.4em;
+  }
+  .mainContacto__Info1__flexDivs1__parrafo {
+    font-size: 1.3em;
+  }
+  .mainContacto__Info1__flexDivs2 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs2__title {
+    font-size: 1.4em;
+  }
+  .mainContacto__Info1__flexDivs2__parrafo {
+    font-size: 1.3em;
+  }
+  .mainContacto__Info1__flexDivs3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__Info1__flexDivs3__title {
+    font-size: 1.4em;
+  }
+  .mainContacto__Info1__flexDivs3__parrafo {
+    font-size: 1.3em;
+  }
+  .mainContacto__iFormularios {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainContacto__iFormularios__title {
+    font-size: 1.4em;
+  }
+  .mainContacto__iFormularios__parrafo {
+    font-size: 1.3em;
+  }
+  .mainContacto__iFormularios__nombre {
+    height: 3em;
+    width: 12em;
+    font-size: 1.3em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__numero {
+    height: 3em;
+    width: 12em;
+    font-size: 1.3em;
+    margin: .8em .4em;
+    padding: 1em;
+  }
+  .mainContacto__iFormularios__mail {
+    height: 3em;
+    width: 25em;
+    font-size: 1.3em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__mensaje {
+    min-width: 25em;
+    min-height: 5em;
+    max-width: 30em;
+    max-height: 15em;
+    height: 5em;
+    width: 25em;
+    font-size: 1.3em;
+    padding: 1em 1em;
+    margin: 1em 0;
+  }
+  .mainContacto__iFormularios__boton {
+    height: 3em;
+    width: 15em;
+    font-size: 1.3em;
+    padding: 0 1em;
+  }
+  /* ------------ REGISTRO ------------ */
+  .bodyReg {
+    background-image: url(Multimedia/corteIndex.jpg);
+  }
+  .mainReg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5em 1.5em;
+  }
+  .mainReg__mainTitle__text {
+    font-size: 3.2em;
+  }
+  .mainReg__titulo2 {
+    font-size: 2.2em;
+  }
+  .mainReg__Form__correo {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background-color: black;
+    border: solid .1em white;
+    padding: 1em;
+  }
+  .mainReg__Form__contraseña {
+    height: 1.2em;
+    width: 18em;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mainReg__Form__mSesionLabel {
+    font-size: 1.2em;
+  }
+  .mainReg__Form__link {
+    font-size: 1.2em;
+  }
+  /* ------------ CURSOS ------------ */
+  .mainCursos {
+    height: 140vh;
+  }
+  .mainCursos__lista__item__curso {
+    padding: 1em 1em;
+    height: 29em;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  .mainCursos__lista__item__curso:hover {
+    height: 70vh;
+  }
+  .mainCursos__lista__item__curso__titulo {
+    font-size: 1.4em;
+  }
+  .mainCursos__lista__item__curso__info {
+    font-size: 1.2em;
+  }
+  .mainCursos__lista__item__curso__button {
+    font-size: 1.2em;
+  }
+  /* ------------ CURSOS LISTA ------------ */
+  .mainCLista {
+    height: 120vh;
+  }
+  .mainCLista__lista__item {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6vh;
+  }
+  .mainCLista__lista__item__curso {
+    padding: 2em;
+    height: 20em;
+  }
+  .mainCLista__lista__item__curso__titulo {
+    font-size: 1.7em;
+  }
+  .mainCLista__lista__item__curso__info {
+    font-size: 1.4em;
+  }
+  .mainCLista__lista__item__curso__info2 {
+    font-size: 1.4em;
+  }
+  .mainCLista__lista__item__curso__button {
+    font-size: 1.4em;
+  }
+  .mainCLista__lista__item__curso__button:hover {
+    color: #0099ff;
+  }
+  /* ------------ CAMPUS ------------ */
+  .mainCampus__sideHeader__title {
+    width: 80%;
+  }
+  .mainCampus__sideHeader__title__text {
+    font-size: 2.7em;
+  }
+  .mainCampus__nav__lista__item {
+    font-size: 1.3em;
+  }
+  .mainCampus__nav__lista__item__link {
+    font-size: 1.2em;
+  }
+  .mainCampus__navBar__text {
+    font-size: 3em;
+  }
+  .mainCampus__navBar__nav__lista__item__link {
+    font-size: 1.4em;
+  }
+  .mainCampus__navMobile {
+    display: none;
+  }
+  .mainCampus__mainContent {
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=mainStyle.css.map */

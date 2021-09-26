@@ -31,7 +31,7 @@
         
         &__parrafo {
             color: cornsilk;
-            font-size: 1.6em;
+            font-size: 1.5em;
             text-align: center;
             padding: 1.5em 8em;
             margin-top: 2.5vh;
@@ -70,7 +70,7 @@
         
         &__parrafo {
             color: cornsilk;
-            font-size: 1.6em;
+            font-size: 1.5em;
             text-align: center;
             padding: 1.5em 8em;
         }
@@ -80,15 +80,15 @@
         grid-area: Img;
         background-color: black;
         padding: 2em 2em;
-        @include Sizes(25vw, 63vh);
+        @include Sizes(30vw, 63vh);
         border-radius: 3em;
         margin-top: 5vh;
-        margin-left: 6vw;
+        margin-left: 3vw;
 
         &__foto {
-            background-color: cornsilk;
+            background-image: url(Multimedia/Nos1.jpg);
             background-size: cover;
-            @include Sizes(25vw, 63vh);
+            @include Sizes(30vw, 63vh);
         }
     }
 
@@ -96,15 +96,15 @@
         grid-area: pFoto;
         background-color: black;
         padding: 2em 2em;
-        @include Sizes(53vw, 42vh);
+        @include Sizes(53vw, 50vh);
         border-radius: 3em;
         margin-left: 10vw;
         margin-top: 3vh;
 
         &__img {
-            background-color: cornsilk;
+            background-image: url(Multimedia/Nos2.jpg);
             background-size: cover;
-            @include Sizes(53vw, 42vh);
+            @include Sizes(53vw, 50vh);
         }
     }
 
@@ -124,7 +124,7 @@
         
         &__parrafo {
             color: cornsilk;
-            font-size: 1.6em;
+            font-size: 1.5em;
             text-align: center;
             padding: 1.5em 8em;
         }
