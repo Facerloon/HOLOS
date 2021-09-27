@@ -891,7 +891,7 @@ html {
 }
 
 .bodyReg {
-  background-image: url(Multimedia/bodytry.jpg);
+  background-image: url(Multimedia/bodyR.jpg);
   background-size: cover;
 }
 
@@ -914,7 +914,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  background-image: url(Multimedia/header.jpg);
+  background-image: url(Multimedia/regLogin.jpg);
   background-size: cover;
   background-position: left;
   border: cornsilk .5em double;
