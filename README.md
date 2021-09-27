@@ -13,11 +13,11 @@ encuentra la lista de todos los cursos, talleres y clases a los que se pueden in
 se muestra toda la información pertinente al usuario particular y los cursos a los que esté inscripto.
 
 Aclaraciones: 
--Hay algunos links que no tienen nada, como las redes sociales o los del campus. No me pareció pertinente agregarlos ya que es una 
+1. Hay algunos links que no tienen nada, como las redes sociales o los del campus. No me pareció pertinente agregarlos ya que es una 
 versión de prueba y no va a ser publicada.
--Bootstrap no está incluido en la entrega ya que las cosas para lo que lo pensaba usar las pude hacer solamente con css. 
--Incluí una página 404 personalizada.
--Los archivos relacionados al SASS (package.json y node_modules) no están incluidos ya que no los utilicé para compilar los 
+2. Bootstrap no está incluido en la entrega ya que las cosas para lo que lo pensaba usar las pude hacer solamente con css. 
+3. Incluí una página 404 personalizada.
+4. Los archivos relacionados al SASS (package.json y node_modules) no están incluidos ya que no los utilicé para compilar los 
 archivos. Desde un principio tuve problemas con la instalación de SASS, probé de las dos formas que nos enseñaron pero me 
 resultaron un poco complicadas. Por eso empecé a utilizar una extensión del VSCode (Live Sass Compiler) que permite compilar
 los archivos .scss de una forma mucho más sencilla y rápida, sin la necesidad de instalar nada.
